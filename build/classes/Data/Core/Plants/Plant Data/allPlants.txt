@@ -1,0 +1,3 @@
+Phenotype,4704,03/01/2021,SP1,Blue Dream,Seed - 2020 Harvest,Photoperiod,Flower,Female
+Phenotype,4444,03/01/2021,SP20,Blue Dream,Seed - 2020 Harvest,Photoperiod,Flower,Female
+Phenotype,6666,03/01/2021,SP14,Blue Dream,Seed - 2020 Harvest,Photoperiod,Flower,Female

@@ -1,0 +1,62 @@
+Sat Aug 29 2020 04:24:45,Jacob Hartley,1.0,pound,3200.0,true,Cash,Sold it
+Sat Aug 29 2020 04:27:10,Jacob Hartley,343.0,gram,3430.0,true,Cash,sold it rn
+Sat Aug 29 2020 04:36:17,Jacob Hartley,50.0,gram,500.0,true,Cashapp,Sold em
+Sat Aug 29 2020 04:38:50,Jacob Hartley,50.0,gram,500.0,false,Cash,ya
+Sat Aug 29 2020 04:40:34,995699,50.0,gram,500.0,false,Cash,ya
+Sat Aug 29 2020 04:42:15,Jacob Hartley,50.0,gram,500.0,false,Cash,ya
+Sat Aug 29 2020 04:43:27,995699,50.0,gram,500.0,false,Cash,ya
+Sat Aug 29 2020 04:43:32,Jacob Hartley,50.0,gram,500.0,false,Cash,ya
+Sat Aug 29 2020 04:44:04,Jacob Hartley,50.0,gram,500.0,false,Cash,ya
+Sat Aug 29 2020 04:44:08,Jacob Hartley,50.0,gram,500.0,false,Cash,ya
+Sat Aug 29 2020 04:44:38,Jacob Hartley,50.0,gram,500.0,false,Cash,ya
+Sat Aug 29 2020 04:45:10,Jacob Hartley,50.0,gram,500.0,false,Cash,ya
+Sat Aug 29 2020 04:45:52,Jacob Hartley,50.0,gram,50.0,true,Cash,ya
+Sat Aug 29 2020 05:04:50,Jacob Hartley,50.0,gram,500.0,true,Cash,ya
+Sat Aug 29 2020 05:07:55,Jacob Hartley,50.0,gram,500.0,true,Cash,ya
+Sat Aug 29 2020 05:08:41,Jacob Hartley,50.0,gram,500.0,true,Cash,ya
+Sat Aug 29 2020 05:09:01,Jacob Hartley,50.0,gram,500.0,true,Cash,ya
+Sat Aug 29 2020 05:09:18,Jacob Hartley,50.0,gram,500.0,true,Cash,ya
+Sat Aug 29 2020 05:09:53,Jacob Hartley,50.0,gram,500.0,true,Cash,ya
+Sat Aug 29 2020 05:10:48,Jacob Hartley,50.0,gram,500.0,false,Cash,ya
+Sat Aug 29 2020 05:11:06,995699,50.0,gram,500.0,false,Cash,ya
+Sat Aug 29 2020 05:13:14,Jacob Hartley,25.0,gram,25.0,false,Cash,ya
+Sat Aug 29 2020 05:13:45,Jacob Hartley,20.0,gram,20.0,false,Cash,ya
+Sat Aug 29 2020 05:14:06,Jacob Hartley,20.0,gram,20.0,false,Cash,ya
+Sun Aug 30 2020 06:46:35,Jacob Hartley,200.0,ounce,200.0,false,Cash,yes
+Sun Aug 30 2020 06:49:29,Jacob Hartley,20.0,gram,200.0,false,Cash,yes
+Sun Aug 30 2020 07:09:01,Jacob Hartley,200.0,gram,200.0,false,Cash,200,Jacob
+Sun Aug 30 2020 07:14:48,Jacob Hartley,200.0,gram,200.0,true,Cash,200,Jacob
+Sun Aug 30 2020 07:18:46,Jacob Hartley,200.0,pound,200.0,false,Cash,200,Jacob
+Sun Aug 30 2020 07:21:25,Jacob Hartley,2.0,ounce,175.0,false,Cash,yes,Jacob
+Sun Aug 30 2020 07:23:20,Jacob Hartley,50.0,ounce,500.0,false,Cash,50,Jacob
+Sun Aug 30 2020 07:25:10,Jacob Hartley,50.0,ounce,50.0,false,Cash,50,Jacob
+Sun Aug 30 2020 07:26:26,Jacob Hartley,50.0,ounce,50.0,false,Cash,50,Jacob
+Sun Aug 30 2020 07:29:48,Jacob Hartley,1.0,pound,200.0,false,Cash,20,Jacob
+Sun Aug 30 2020 07:34:58,Jacob Hartley,10.0,ounce,200.0,false,Cash,sold!,Jacob
+Fri Sep 11 2020 09:13:40,Jacob Hartley,50.0,gram,500.0,false,Cash,yuh,Jacob
+Tue Oct 06 2020 22:54:57,Jacob Hartley,2.0,ounce,200.0,false,Cash,Sold it,Jacob
+Tue Oct 06 2020 22:55:25,Jacob Hartley,2.0,ounce,200.0,false,Cash,Sold it,Jacob
+Thu Oct 29 2020 16:30:38,Jacob Hartley,1.0,8.0 lb 1.0 oz 1.0 g ,500.0,false,Cash,testing new func,Jacob
+Sun Nov 01 2020 01:30:53,Jacob Hartley,1.0,5.0 lb 1.0 g ,500.0,false,Cash,test,Jacob
+Sun Nov 01 2020 01:32:28,Jacob Hartley,1.0,1.0 g 2.0 oz 5.0 lb ,599.0,false,Cash,test,Jacob
+Sun Nov 01 2020 01:33:58,Jacob Hartley,1.0,1.0 g 2.0 oz 5.0 lb ,500.0,false,Cashapp,test,Jacob
+Sun Nov 01 2020 01:34:26,Jacob Hartley,1.0,1.0 g 5.0 lb ,500.0,false,Cashapp,test,Jacob
+Sun Nov 01 2020 02:17:21,Jacob Hartley,0.0,24.0 lb ,250.0,false,Cash,test,Jacob
+Sun Nov 01 2020 02:19:45,Jacob Hartley,0.0,24.0 lb ,4.0,false,Cash,test,Jacob
+Sun Nov 01 2020 02:21:46,Jacob Hartley,0.0,5.0 lb ,500.0,false,Cash,test,Jacob
+Sun Nov 01 2020 02:29:38,Jacob Hartley,0.0,5.0 lb ,5.0,false,Cash,test,Jacob
+Sun Nov 01 2020 02:30:37,Jacob Hartley,0.0,5.0 lb ,500.0,false,Cash,test,Jacob
+Sun Nov 01 2020 02:31:49,Jacob Hartley,0.0,5.0 lb ,5.0,false,Cash,test,Jacob
+Sun Nov 01 2020 02:38:02,Jacob Hartley,0.0,15.0 lb ,500.0,false,Cash,test,Jacob
+Sun Nov 01 2020 02:39:27,Jacob Hartley,0.0,15.0 lb ,500.0,false,Cash,test,Jacob
+Sun Nov 01 2020 02:40:30,Jacob Hartley,0.0,5.0 lb ,500.0,false,Cash,test,Jacob
+Sun Nov 01 2020 02:42:32,Jacob Hartley,0.0,5.0 lb ,5.0,false,Cash,test,Jacob
+Sun Nov 01 2020 02:45:19,Jacob Hartley,0.0,5.0 lb ,500.0,false,Cash,test,Jacob
+Sun Nov 01 2020 02:45:38,Jacob Hartley,0.0,34.0 lb ,500.0,false,Cash,test,Jacob
+Sun Nov 01 2020 02:45:59,Jacob Hartley,0.0,6.0 lb ,500.0,false,Cash,test,Jacob
+Sun Nov 01 2020 19:09:46,Jacob Hartley,0.0,6.0 lb ,100.0,false,Cash,test,Jacob
+Tue Nov 03 2020 02:15:51,Jacob Hartley,0.0,4.0 lb ,5.0,true,Cash,test dd,Jacob
+Tue Nov 03 2020 02:17:09,Jacob Hartley,0.0,4.0 lb ,5.0,true,Cash,test gsc,Jacob
+Tue Nov 03 2020 02:17:30,Jacob Hartley,0.0,4.0 lb ,5.0,true,Cash,test gsc,Jacob
+Tue Nov 03 2020 03:25:56,Jacob Hartley,1.0,1.0 g ,500.0,false,Cash,Test,Jacob
+Tue Nov 03 2020 03:35:27,Jacob Hartley,0.0,100.0 lb ,100.0,false,Cash,test,Jacob

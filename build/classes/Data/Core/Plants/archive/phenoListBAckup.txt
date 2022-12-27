@@ -1,0 +1,93 @@
+2697,27-33-2021 11:33:21,SP58,Peyote Wifi,Seed Seedsman,photoperiod,flower,female
+7662,03/01/2021,SP60,GSC x Critical Mass,Seed - Southwick,Photoperiod,Flower,Female
+7063,03/01/2021,SP63,Emerald City,Seed - Southampton,Photoperiod,Flower,Female
+2318,03/01/2021,SP64,Emerald City,Seed - Southampton,Photoperiod,Flower,Female
+1508,03/01/2021,SP62,Wedding Cake,Seed - ILGM,Photoperiod,Flower,Female
+6570,03/01/2021,SP57,Wedding Cake,Seed - ILGM,Photoperiod,Flower,Female
+5918,03/01/2021,SP69,Wedding Cake,Seed - ILGM,Photoperiod,Flower,Female
+2908,03/01/2021,SP22,Wedding Cake,Seed - ILGM,Photoperiod,Flower,Female
+4704,03/01/2021,SP1,Blue Dream,Seed - 2020 Harvest,Photoperiod,Flower,Female
+2046,03/01/2021,SP2,GSC,Seed - 2020 Harvest,Photoperiod,Flower,Female
+9464,03/01/2021,SP3,GSC,Seed - 2020 Harvest,Photoperiod,Flower,Female
+1794,03/01/2021,SP4,Unkown,Seed - Unkown,Photoperiod,Flower,Female
+4739,03/01/2021,SP5,Unkown,Seed - Unkown,Photoperiod,Flower,Female
+5544,03/01/2021,SP6,Unkown,Seed - Unkown,Photoperiod,Flower,Female
+7541,03/01/2021,SP7,Unkown,Seed - Unkown,Photoperiod,Flower,Female
+7532,03/01/2021,SP8,Unkown,Seed - Unkown,Photoperiod,Flower,Female
+4694,03/01/2021,SP9,Unkown,Seed - Unkown,Photoperiod,Flower,Female
+773,03/01/2021,SP10,Unkown,Seed - Unkown,Photoperiod,Flower,Female
+5492,03/01/2021,SP11,Unkown,Seed - Unkown,Photoperiod,Flower,Female
+9417,03/01/2021,SP15,Peyote Wifi,Seed - Seedsman,Photoperiod,Flower,Female
+9921,03/01/2021,SP50,GSC,Seed - 2020 harvest,Photoperiod,Flower,Female
+9681,03/01/2021,SP51,Blue Dream,Seed - 2020 harvest,Photoperiod,Flower,Female
+1940,03/01/2021,SP52,GSC,Seed - 2020 harvest,Photoperiod,Flower,Female
+3878,03/01/2021,SP53,Unkown,Seed - Unkown,Photoperiod,Flower,Female
+5018,03/01/2021,SP54,Unkown,Seed - Unkown,Photoperiod,Flower,Female
+5078,03/01/2021,SP55,Unkown,Seed - Unkown,Photoperiod,Flower,Female
+1380,03/01/2021,SP66,Chemdog Gorilla,Seed - Seedsman,Photoperiod,Flower,Female
+2373,03/01/2021,SP67,Peyote Wifi,Seed - Seedsman,Photoperiod,Flower,Female
+6049,03/01/2021,SP61,Grandaddy Purple,Seed - ILGM,Photoperiod,Flower,Female
+771,03/01/2021,SP59,Grandaddy Purple,Seed - ILGM,Photoperiod,Flower,Female
+1123,13-2-2022 22:24:27,Barn Veg Tent,Bahama Bussdown,Solfire Gardens,Photoperiod,Veg,Fem
+3396,14-2-2022 03:20:54,CK1 Cloner,Sherb S1 2,Breeder,Photoperiod,Clone,Fem
+1583,14-2-2022 03:23:30,CK1 Cloner,Sherb S1 4,Breeder,Photoperiod,Clone,Fem
+5875,14-2-2022 03:23:30,CK1 Cloner,Sherb S1 5,Breeder,Photoperiod,Clone,Fem
+2608,14-2-2022 03:23:30,CK1 Cloner,GMO Cookies 1,Breeder,Photoperiod,Clone,Fem
+1827,14-2-2022 03:23:30,CK1 Cloner,GMO Cookies 2,Breeder,Photoperiod,Clone,Fem
+4160,14-2-2022 03:23:30,CK1 Cloner,GMO Cookies 3,Breeder,Photoperiod,Clone,Fem
+9433,14-2-2022 03:23:30,CK1 Cloner,Bahama Bussdown 1,Solfire Gardens,Photoperiod,Clone,Fem
+8355,14-2-2022 03:23:30,CK1 Cloner,Bahama Bussdown 2,Solfire Gardens,Photoperiod,Clone,Fem
+4111,14-2-2022 03:23:30,CK1 Cloner,Bahama Bussdown 3,Solfire Gardens,Photoperiod,Clone,Fem
+4400,14-2-2022 03:23:30,CK1 Cloner,Bahama Bussdown 4,Solfire Gardens,Photoperiod,Clone,Fem
+7700,14-2-2022 03:23:30,CK1 Cloner,Bahama Bussdown 5,Solfire Gardens,Photoperiod,Clone,Fem
+796,14-2-2022 03:23:30,CK1 Cloner,SSOG 1,Crockett Family Farms,Photoperiod,Clone,Fem
+9108,14-2-2022 03:23:30,CK1 Cloner,SSOG 2,Crockett Family Farms,Photoperiod,Clone,Fem
+8640,14-2-2022 03:23:30,CK1 Cloner,SSOG 3,Crockett Family Farms,Photoperiod,Clone,Fem
+450,14-2-2022 03:23:30,CK1 Cloner,SSOG 4,Crockett Family Farms,Photoperiod,Clone,Fem
+7358,14-2-2022 03:23:30,CK1 Cloner,Candy Land 1,Breeder,Photoperiod,Clone,Fem
+9570,14-2-2022 03:23:30,CK1 Cloner,Candy Land 2,Breeder,Photoperiod,Clone,Fem
+8622,14-2-2022 03:23:30,CK1 Cloner,Candy Land 3,Breeder,Photoperiod,Clone,Fem
+9447,14-2-2022 03:23:30,CK1 Cloner,Banana Runtz 1,Solfire Gardens,Photoperiod,Clone,Fem
+5677,14-2-2022 03:23:30,CK1 Cloner,Banana Runtz 2,Solfire Gardens,Photoperiod,Clone,Fem
+6612,14-2-2022 03:23:30,CK1 Cloner,Banana Runtz 3,Solfire Gardens,Photoperiod,Clone,Fem
+5589,14-2-2022 03:23:30,CK1 Cloner,Banana Runtz 4,Solfire Gardens,Photoperiod,Clone,Fem
+4249,14-2-2022 03:23:30,CK1 Cloner,Fuel D.og 1,Seedsman,Photoperiod,Clone,Fem
+8662,14-2-2022 03:23:30,CK1 Cloner,Fuel D.og 2,Seedsman,Photoperiod,Clone,Fem
+6005,14-2-2022 03:23:30,CK1 Cloner,Fuel D.og 3,Seedsman,Photoperiod,Clone,Fem
+1498,14-2-2022 03:23:30,CK1 Cloner,Fuel D.og 4,Seedsman,Photoperiod,Clone,Fem
+769,14-2-2022 03:23:30,CK1 Cloner,Fuel D.og 5,Seedsman,Photoperiod,Clone,Fem
+9319,14-2-2022 03:23:30,CK1 Cloner,Fuel D.og 6,Seedsman,Photoperiod,Clone,Fem
+8277,14-2-2022 03:23:30,CK1 Cloner,Fuel D.og 7,Seedsman,Photoperiod,Clone,Fem
+1059,14-2-2022 03:23:30,CK1 Cloner,Rainbow Cake 1,Pheno Finder Seeds,Photoperiod,Clone,Fem
+4433,14-2-2022 03:23:30,CK1 Cloner,Rainbow Cake 2,Pheno Finder Seeds,Photoperiod,Clone,Fem
+4011,14-2-2022 03:23:30,CK1 Cloner,Runtz Muffin 1,Seedsman,Photoperiod,Clone,Fem
+5687,14-2-2022 03:23:30,CK1 Cloner,Runtz Muffin 2,Seedsman,Photoperiod,Clone,Fem
+3185,14-2-2022 03:23:30,CK1 Cloner,Runtz Muffin 3,Seedsman,Photoperiod,Clone,Fem
+8780,14-2-2022 03:23:30,CK1 Cloner,Runtz Muffin 4,Seedsman,Photoperiod,Clone,Fem
+800,14-2-2022 03:23:30,CK1 Cloner,Runtz Muffin 5,Seedsman,Photoperiod,Clone,Fem
+9959,14-2-2022 03:23:30,Veg Tent,Goldleaf 1,ILGM,Photoperiod,Germination,Fem
+8716,14-2-2022 03:23:30,Veg Tent,Goldleaf 2,ILGM,Photoperiod,Germination,Fem
+9575,14-2-2022 03:23:30,Veg Tent,Goldleaf 3,ILGM,Photoperiod,Germination,Fem
+2871,14-2-2022 03:23:30,Veg Tent,Goldleaf 4,ILGM,Photoperiod,Germination,Fem
+8303,14-2-2022 03:23:30,Veg Tent,Goldleaf 5,ILGM,Photoperiod,Germination,Fem
+2617,14-2-2022 03:23:30,Veg Tent,Wedding Cake,1508 Seed,Photoperiod reg,Germination,Unknown
+9496,14-2-2022 03:23:30,Veg Tent,Skywalker OG 1,ILGM,Photoperiod,Germination,Fem
+8894,14-2-2022 03:23:30,Veg Tent,Skywalker OG 2,ILGM,Photoperiod,Germination,Fem
+5452,14-2-2022 03:23:30,Veg Tent,Skywalker OG 3,ILGM,Photoperiod,Germination,Fem
+1644,14-2-2022 03:23:30,Veg Tent,Skywalker OG 4,ILGM,Photoperiod,Germination,Fem
+5768,14-2-2022 03:23:30,Veg Tent,Skywalker OG 5,ILGM,Photoperiod,Germination,Fem
+881,14-2-2022 03:23:30,Veg Tent,Skywalker OG 6,ILGM,Photoperiod,Germination,Fem
+8390,14-2-2022 03:23:30,Veg Tent,Skywalker OG 7,ILGM,Photoperiod,Germination,Fem
+6078,14-2-2022 03:23:30,Veg Tent,Skywalker OG 8,ILGM,Photoperiod,Germination,Fem
+7032,14-2-2022 03:23:30,Veg Tent,Skywalker OG 9,ILGM,Photoperiod,Germination,Fem
+8570,14-2-2022 03:23:30,Veg Tent,Skywalker OG 10,ILGM,Photoperiod,Germination,Fem
+6619,14-2-2022 03:23:30,Veg Tent,Skywalker OG 11,ILGM,Photoperiod,Germination,Fem
+5265,14-2-2022 03:23:30,Veg Tent,Skywalker OG 12,ILGM,Photoperiod,Germination,Fem
+3541,14-2-2022 03:23:30,Veg Tent,Skywalker OG 13,ILGM,Photoperiod,Germination,Fem
+6354,14-2-2022 03:23:30,Veg Tent,Skywalker OG 14,ILGM,Photoperiod,Germination,Fem
+7424,14-2-2022 03:23:30,Veg Tent,Skywalker OG 15,ILGM,Photoperiod,Germination,Fem
+3561,14-2-2022 03:23:30,Veg Tent,Skywalker OG 16,ILGM,Photoperiod,Germination,Fem
+2025,14-2-2022 03:23:30,Veg Tent,Skywalker OG 17,ILGM,Photoperiod,Germination,Fem
+966,14-2-2022 03:23:30,Veg Tent,Skywalker OG 18,ILGM,Photoperiod,Germination,Fem
+5386,14-2-2022 03:23:30,Veg Tent,Skywalker OG 19,ILGM,Photoperiod,Germination,Fem
+9990,14-2-2022 03:23:30,Veg Tent,Skywalker OG 20,ILGM,Photoperiod,Germination,Fem

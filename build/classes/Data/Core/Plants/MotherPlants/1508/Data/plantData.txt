@@ -1,0 +1,8 @@
+Plant Identify:
+1508, Wedding Cake S1,VEGTENT4X8
+Grow Container:
+I-4001
+Plant Height:
+16
+Grow State:
+VEGETATIVE

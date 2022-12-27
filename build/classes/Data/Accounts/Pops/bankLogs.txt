@@ -1,0 +1,12 @@
+Bank Deposit|Thu, Jul 16 2020 09:39:38|Deposit of $500 to main statement.
+Bank Deposit|Thu, Jul 16 2020 09:39:39|Deposit of $500 to main statement.
+Bank Deposit|Thu, Jul 16 2020 09:39:39|Deposit of $500 to main statement.
+Bank Deposit|Thu, Jul 16 2020 09:39:39|Deposit of $500 to main statement.
+Bank Deposit|Thu, Jul 16 2020 09:39:39|Deposit of $500 to main statement.
+Bank Deposit|Thu, Jul 16 2020 09:39:39|Deposit of $500 to main statement.
+Bank Deposit|Thu, Jul 16 2020 09:39:39|Deposit of $500 to main statement.
+Bank Deposit|Thu, Jul 16 2020 09:39:39|Deposit of $500 to main statement.
+Bank Deposit|Thu, Jul 16 2020 10:32:27|Deposit of $500 to main statement.
+Bank Deposit|Wed, Jul 22 2020 13:57:12|Deposit of $500 to main statement.
+Bank Deposit|Wed, Jul 22 2020 20:19:56|Deposit of $500 to main statement.
+Bank Deposit|Sat, Aug 08 2020 14:27:20|Deposit of $500 to main statement.
