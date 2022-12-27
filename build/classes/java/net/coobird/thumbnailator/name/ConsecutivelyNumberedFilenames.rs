@@ -1,0 +1,2 @@
+net.coobird.thumbnailator.name.ConsecutivelyNumberedFilenames$ConsecutivelyNumberedFilenamesIterator
+net.coobird.thumbnailator.name.ConsecutivelyNumberedFilenames

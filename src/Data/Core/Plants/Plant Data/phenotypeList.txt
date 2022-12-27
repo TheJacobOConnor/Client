@@ -1,0 +1,93 @@
+2697,SP58,Peyote Wifi,photoperiod,flower,female
+7662,SP60,GSC x Critical Mass,Photoperiod,Flower,Female
+7063,SP63,Emerald City,Photoperiod,Flower,Female
+2318,SP64,Emerald City,Photoperiod,Flower,Female
+1508,SP62,Wedding Cake,Photoperiod,Flower,Female
+6570,SP57,Wedding Cake,Photoperiod,Flower,Female
+5918,SP69,Wedding Cake,Photoperiod,Flower,Female
+2908,SP22,Wedding Cake,Photoperiod,Flower,Female
+4704,SP1,Blue Dream,Photoperiod,Flower,Female
+2046,SP2,GSC,Photoperiod,Flower,Female
+9464,SP3,GSC,Photoperiod,Flower,Female
+1794,SP4,Photoperiod,Flower,Female
+4739,SP5,Photoperiod,Flower,Female
+5544,SP6,Photoperiod,Flower,Female
+7541,SP7,Photoperiod,Flower,Female
+7532,SP8,Photoperiod,Flower,Female
+4694,SP9,Photoperiod,Flower,Female
+773,SP10,Photoperiod,Flower,Female
+5492,SP11,Photoperiod,Flower,Female
+9417,SP15,Peyote Wifi,Photoperiod,Flower,Female
+9921,SP50,GSC,Photoperiod,Flower,Female
+9681,SP51,Blue Dream,Photoperiod,Flower,Female
+1940,SP52,GSC,Photoperiod,Flower,Female
+3878,SP53,Photoperiod,Flower,Female
+5018,SP54,Photoperiod,Flower,Female
+5078,SP55,Photoperiod,Flower,Female
+1380,SP66,Chemdog Gorilla,Photoperiod,Flower,Female
+2373,SP67,Peyote Wifi,Photoperiod,Flower,Female
+6049,SP61,Grandaddy Purple,Photoperiod,Flower,Female
+771,SP59,Grandaddy Purple,Photoperiod,Flower,Female
+1123,13-2-2022 22:24:27,Barn Veg Tent,Bahama Bussdown,Photoperiod,Veg,Fem
+3396,14-2-2022 03:20:54,CK1 Cloner,Sherb S1 2,Photoperiod,Clone,Fem
+1583,CK1 Cloner,Sherb S1 4,Photoperiod,Clone,Fem
+5875,CK1 Cloner,Sherb S1 5,Photoperiod,Clone,Fem
+2608,CK1 Cloner,GMO Cookies 1,Photoperiod,Clone,Fem
+1827,CK1 Cloner,GMO Cookies 2,Photoperiod,Clone,Fem
+4160,CK1 Cloner,GMO Cookies 3,Photoperiod,Clone,Fem
+9433,CK1 Cloner,Bahama Bussdown 1,Photoperiod,Clone,Fem
+8355,CK1 Cloner,Bahama Bussdown 2,Photoperiod,Clone,Fem
+4111,CK1 Cloner,Bahama Bussdown 3,Photoperiod,Clone,Fem
+4400,CK1 Cloner,Bahama Bussdown 4,Photoperiod,Clone,Fem
+7700,CK1 Cloner,Bahama Bussdown 5,Photoperiod,Clone,Fem
+796,CK1 Cloner,SSOG 1,Photoperiod,Clone,Fem
+9108,CK1 Cloner,SSOG 2,Photoperiod,Clone,Fem
+8640,CK1 Cloner,SSOG 3,Photoperiod,Clone,Fem
+450,CK1 Cloner,SSOG 4,Photoperiod,Clone,Fem
+7358,CK1 Cloner,Candy Land 1,Photoperiod,Clone,Fem
+9570,CK1 Cloner,Candy Land 2,Photoperiod,Clone,Fem
+8622,CK1 Cloner,Candy Land 3,Photoperiod,Clone,Fem
+9447,CK1 Cloner,Banana Runtz 1,Photoperiod,Clone,Fem
+5677,CK1 Cloner,Banana Runtz 2,Photoperiod,Clone,Fem
+6612,CK1 Cloner,Banana Runtz 3,Photoperiod,Clone,Fem
+5589,CK1 Cloner,Banana Runtz 4,Photoperiod,Clone,Fem
+4249,CK1 Cloner,Fuel D.og 1,Photoperiod,Clone,Fem
+8662,CK1 Cloner,Fuel D.og 2,Photoperiod,Clone,Fem
+6005,CK1 Cloner,Fuel D.og 3,Photoperiod,Clone,Fem
+1498,CK1 Cloner,Fuel D.og 4,Photoperiod,Clone,Fem
+769,CK1 Cloner,Fuel D.og 5,Photoperiod,Clone,Fem
+9319,CK1 Cloner,Fuel D.og 6,Photoperiod,Clone,Fem
+8277,CK1 Cloner,Fuel D.og 7,Photoperiod,Clone,Fem
+1059,CK1 Cloner,Rainbow Cake 1,Photoperiod,Clone,Fem
+4433,CK1 Cloner,Rainbow Cake 2,Photoperiod,Clone,Fem
+4011,CK1 Cloner,Runtz Muffin 1,Photoperiod,Clone,Fem
+5687,CK1 Cloner,Runtz Muffin 2,Photoperiod,Clone,Fem
+3185,CK1 Cloner,Runtz Muffin 3,Photoperiod,Clone,Fem
+8780,CK1 Cloner,Runtz Muffin 4,Photoperiod,Clone,Fem
+800,CK1 Cloner,Runtz Muffin 5,Photoperiod,Clone,Fem
+9959,Veg Tent,Goldleaf 1,Photoperiod,Germination,Fem
+8716,Veg Tent,Goldleaf 2,Photoperiod,Germination,Fem
+9575,Veg Tent,Goldleaf 3,Photoperiod,Germination,Fem
+2871,Veg Tent,Goldleaf 4,Photoperiod,Germination,Fem
+8303,Veg Tent,Goldleaf 5,Photoperiod,Germination,Fem
+2617,Veg Tent,Wedding Cake,Photoperiod,Germination,Unknown
+9496,Veg Tent,Skywalker OG 1,Photoperiod,Germination,Fem
+8894,Veg Tent,Skywalker OG 2,Photoperiod,Germination,Fem
+5452,Veg Tent,Skywalker OG 3,Photoperiod,Germination,Fem
+1644,Veg Tent,Skywalker OG 4,Photoperiod,Germination,Fem
+5768,Veg Tent,Skywalker OG 5,Photoperiod,Germination,Fem
+881,Veg Tent,Skywalker OG 6,Photoperiod,Germination,Fem
+8390,Veg Tent,Skywalker OG 7,Photoperiod,Germination,Fem
+6078,Veg Tent,Skywalker OG 8,Photoperiod,Germination,Fem
+7032,Veg Tent,Skywalker OG 9,Photoperiod,Germination,Fem
+8570,Veg Tent,Skywalker OG 10,Photoperiod,Germination,Fem
+6619,Veg Tent,Skywalker OG 11,Photoperiod,Germination,Fem
+5265,Veg Tent,Skywalker OG 12,Photoperiod,Germination,Fem
+3541,Veg Tent,Skywalker OG 13,Photoperiod,Germination,Fem
+6354,Veg Tent,Skywalker OG 14,Photoperiod,Germination,Fem
+7424,Veg Tent,Skywalker OG 15,Photoperiod,Germination,Fem
+3561,Veg Tent,Skywalker OG 16,Photoperiod,Germination,Fem
+2025,Veg Tent,Skywalker OG 17,Photoperiod,Germination,Fem
+966,Veg Tent,Skywalker OG 18,Photoperiod,Germination,Fem
+5386,Veg Tent,Skywalker OG 19,Photoperiod,Germination,Fem
+9990,Veg Tent,Skywalker OG 20,Photoperiod,Germination,Fem

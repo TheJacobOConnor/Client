@@ -1,0 +1,1 @@
+net.coobird.thumbnailator.tasks.UnsupportedFormatException

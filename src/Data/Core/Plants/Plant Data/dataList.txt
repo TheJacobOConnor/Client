@@ -1,0 +1,40 @@
+2617,Veg Tent,Wedding Cake,Photoperiod,Germination,Male
+1508,SP62,Wedding Cake,Photoperiod,Flower,Female
+9681,SP51,Blue Dream,Photoperiod,Flower,Female
+1380,SP66,Chemdog Gorilla,Photoperiod,Flower,Female
+3396,14-2-2022 03:20:54,CK1 Cloner,Sherb S1 2,Photoperiod,Clone,Fem
+1583,CK1 Cloner,Sherb S1 4,Photoperiod,Clone,Fem
+5875,CK1 Cloner,Sherb S1 5,Photoperiod,Clone,Fem
+2608,CK1 Cloner,GMO Cookies 1,Photoperiod,Clone,Fem
+1827,CK1 Cloner,GMO Cookies 2,Photoperiod,Clone,Fem
+4160,CK1 Cloner,GMO Cookies 3,Photoperiod,Clone,Fem
+9433,CK1 Cloner,Bahama Bussdown 1,Photoperiod,Clone,Fem
+8355,CK1 Cloner,Bahama Bussdown 2,Photoperiod,Clone,Fem
+4111,CK1 Cloner,Bahama Bussdown 3,Photoperiod,Clone,Fem
+4400,CK1 Cloner,Bahama Bussdown 4,Photoperiod,Clone,Fem
+7700,CK1 Cloner,Bahama Bussdown 5,Photoperiod,Clone,Fem
+796,CK1 Cloner,SSOG 1,Photoperiod,Clone,Fem
+9108,CK1 Cloner,SSOG 2,Photoperiod,Clone,Fem
+8640,CK1 Cloner,SSOG 3,Photoperiod,Clone,Fem
+450,CK1 Cloner,SSOG 4,Photoperiod,Clone,Fem
+7358,CK1 Cloner,Candy Land 1,Photoperiod,Clone,Fem
+9570,CK1 Cloner,Candy Land 2,Photoperiod,Clone,Fem
+8622,CK1 Cloner,Candy Land 3,Photoperiod,Clone,Fem
+9447,CK1 Cloner,Banana Runtz 1,Photoperiod,Clone,Fem
+5677,CK1 Cloner,Banana Runtz 2,Photoperiod,Clone,Fem
+6612,CK1 Cloner,Banana Runtz 3,Photoperiod,Clone,Fem
+5589,CK1 Cloner,Banana Runtz 4,Photoperiod,Clone,Fem
+4249,CK1 Cloner,Fuel D.og 1,Photoperiod,Clone,Fem
+8662,CK1 Cloner,Fuel D.og 2,Photoperiod,Clone,Fem
+6005,CK1 Cloner,Fuel D.og 3,Photoperiod,Clone,Fem
+1498,CK1 Cloner,Fuel D.og 4,Photoperiod,Clone,Fem
+769,CK1 Cloner,Fuel D.og 5,Photoperiod,Clone,Fem
+9319,CK1 Cloner,Fuel D.og 6,Photoperiod,Clone,Fem
+8277,CK1 Cloner,Fuel D.og 7,Photoperiod,Clone,Fem
+1059,CK1 Cloner,Rainbow Cake 1,Photoperiod,Clone,Fem
+4433,CK1 Cloner,Rainbow Cake 2,Photoperiod,Clone,Fem
+4011,CK1 Cloner,Runtz Muffin 1,Photoperiod,Clone,Fem
+5687,CK1 Cloner,Runtz Muffin 2,Photoperiod,Clone,Fem
+3185,CK1 Cloner,Runtz Muffin 3,Photoperiod,Clone,Fem
+8780,CK1 Cloner,Runtz Muffin 4,Photoperiod,Clone,Fem
+800,CK1 Cloner,Runtz Muffin 5,Photoperiod,Clone,Fem

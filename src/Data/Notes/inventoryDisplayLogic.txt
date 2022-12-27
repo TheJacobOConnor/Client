@@ -1,0 +1,12 @@
+logic for inventory
+
+
+display is going to equal
+
+say 25 slot display
+displaySlots = 25;
+
+for(int i = pageNum * displaySlots - displaySlots; i < pageNum * displaySlots && i < displayItemList.size(); i++
+{
+	xLabel.setText(itemDisplayList.get(i));
+}

@@ -1,0 +1,2 @@
+net.coobird.thumbnailator.makers.ThumbnailMaker$ReadinessTracker
+net.coobird.thumbnailator.makers.ThumbnailMaker

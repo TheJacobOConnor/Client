@@ -1,0 +1,36 @@
+2,3396,14-2-2022 03:20:54,BasementGrowRoom,Sherb S1,Breeder,Photoperiod,Flower
+4,1583,14-2-2022 03:23:30,BasementGrowRoom,Sherb S1,Breeder,Photoperiod,Flower
+5,5875,14-2-2022 03:23:30,BasementGrowRoom,Sherb S1,Breeder,Photoperiod,Flower
+1,2608,14-2-2022 03:23:30,BasementGrowRoom,GMO Cookies,Breeder,Photoperiod,Flower
+2,1827,14-2-2022 03:23:30,BasementGrowRoom,GMO Cookies,Breeder,Photoperiod,Flower
+3,4160,14-2-2022 03:23:30,BasementGrowRoom,GMO Cookies,Breeder,Photoperiod,Flower
+1,9433,14-2-2022 03:23:30,BasementGrowRoom,Bahama Bussdown,Solfire Gardens,Photoperiod,Flower
+2,8355,14-2-2022 03:23:30,BasementGrowRoom,Bahama Bussdown,Solfire Gardens,Photoperiod,Flower
+3,4111,14-2-2022 03:23:30,BasementGrowRoom,Bahama Bussdown,Solfire Gardens,Photoperiod,Flower
+4,4400,14-2-2022 03:23:30,BasementGrowRoom,Bahama Bussdown,Solfire Gardens,Photoperiod,Flower
+5,7700,14-2-2022 03:23:30,BasementGrowRoom,Bahama Bussdown,Solfire Gardens,Photoperiod,Flower
+1,796,14-2-2022 03:23:30,BasementGrowRoom,SSOG,Crockett Family Farms,Photoperiod,Flower
+2,9108,14-2-2022 03:23:30,BasementGrowRoom,SSOG,Crockett Family Farms,Photoperiod,Flower
+3,8640,14-2-2022 03:23:30,BasementGrowRoom,SSOG,Crockett Family Farms,Photoperiod,Flower
+4,450,14-2-2022 03:23:30,BasementGrowRoom,SSOG,Crockett Family Farms,Photoperiod,Flower
+1,7358,14-2-2022 03:23:30,BasementGrowRoom,Candy Land,Breeder,Photoperiod,Flower
+2,9570,14-2-2022 03:23:30,BasementGrowRoom,Candy Land,Breeder,Photoperiod,Flower
+3,8622,14-2-2022 03:23:30,BasementGrowRoom,Candy Land,Breeder,Photoperiod,Flower
+1,9447,14-2-2022 03:23:30,BasementGrowRoom,Banana Runtz,Solfire Gardens,Photoperiod,Flower
+2,5677,14-2-2022 03:23:30,BasementGrowRoom,Banana Runtz,Solfire Gardens,Photoperiod,Flower
+3,6612,14-2-2022 03:23:30,BasementGrowRoom,Banana Runtz,Solfire Gardens,Photoperiod,Flower
+4,5589,14-2-2022 03:23:30,BasementGrowRoom,Banana Runtz,Solfire Gardens,Photoperiod,Flower
+1,4249,14-2-2022 03:23:30,BasementGrowRoom,Fuel D.og,Seedsman,Photoperiod,Flower
+2,8662,14-2-2022 03:23:30,BasementGrowRoom,Fuel D.og,Seedsman,Photoperiod,Flower
+3,6005,14-2-2022 03:23:30,BasementGrowRoom,Fuel D.og,Seedsman,Photoperiod,Flower
+4,1498,14-2-2022 03:23:30,BasementGrowRoom,Fuel D.og,Seedsman,Photoperiod,Flower
+5,769,14-2-2022 03:23:30,BasementGrowRoom,Fuel D.og,Seedsman,Photoperiod,Flower
+6,9319,14-2-2022 03:23:30,BasementGrowRoom,Fuel D.og,Seedsman,Photoperiod,Flower
+7,8277,14-2-2022 03:23:30,BasementGrowRoom,Fuel D.og,Seedsman,Photoperiod,Flower
+1,1059,14-2-2022 03:23:30,BasementGrowRoom,Rainbow Cake,Pheno Finder Seeds,Photoperiod,Flower
+2,4433,14-2-2022 03:23:30,BasementGrowRoom,Rainbow Cake,Pheno Finder Seeds,Photoperiod,Flower
+1,4011,14-2-2022 03:23:30,BasementGrowRoom,Runtz Muffin,Seedsman,Photoperiod,Flower
+2,5687,14-2-2022 03:23:30,BasementGrowRoom,Runtz Muffin,Seedsman,Photoperiod,Flower
+3,3185,14-2-2022 03:23:30,BasementGrowRoom,Runtz Muffin,Seedsman,Photoperiod,Flower
+4,8780,14-2-2022 03:23:30,BasementGrowRoom,Runtz Muffin,Seedsman,Photoperiod,Flower
+5,800,14-2-2022 03:23:30,BasementGrowRoom,Runtz Muffin,Seedsman,Photoperiod,Flower

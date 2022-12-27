@@ -1,0 +1,36 @@
+8640,ssog 3
+796,ssog1
+1583,sherb s1 4
+1827,gmo cookies 2
+4160,gmo cookies 3
+2608,gmo cookies 1
+4433,rbc 2
+1498,fuel dog 4
+8277,fuel dog 7
+8662,fuel dog 2
+6005,fuel dog 3
+9108,ssog 2
+9319,fuel dog 6
+800,rm 5
+769,fuel dog 5
+4011,rm 1
+7358,candyland 1
+450,ssog 4
+8622,candyland 3
+6612,banana runtz 3
+3185,rm 3
+5677,banana runtz 2
+8780,rm4
+4249,fuel dog 1
+9447,banana runtz 1
+3396,sherb s1 2
+1059,rbc 1
+5875,sherb s1 5
+8355,bahama bussdown 2
+9570,candyland 2
+4111,bbd3
+5589,banana runtz 4
+7700,bbd 5
+5687,rm 2
+4400,bbd 4
+0,empty

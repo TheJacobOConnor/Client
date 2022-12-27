@@ -1,0 +1,16 @@
+Plant Identify:
+0100
+1058
+Wedding Cake S1 1
+VEGTENT4X8
+4/19/2022
+
+Grow Container:
+redSoloCupItemId
+growMediaId
+
+Grow State:
+VEGETATIVE
+
+PlantHeight:
+5
