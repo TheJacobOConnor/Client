@@ -93,7 +93,12 @@ public class GrowModuleHandler
         GrowModuleHandler.growModulePanel = growModulePanel;
     }
     
-    
+    public static void changeState(boolean stateChange)
+    {
+        growModulePanel.setEnabled(stateChange);
+        growModulePanel.setVisible(stateChange);
+        
+    }
     
     
     

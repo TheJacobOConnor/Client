@@ -50,6 +50,9 @@ public class IndoorGrowModule extends JPanel
         Font largeFont = new Font("Banschrift", Font.PLAIN, 24);
         textColor = Color.white;
         
+        GrowModuleSelectionLabel selectLabel = new GrowModuleSelectionLabel(this.growRoom.getRoomId(), 300, 145);
+        selectLabel.setBounds(380, 130, 120, 60);     
+        this.add(selectLabel);
         
         JLabel weekLabel = new JLabel();
         weekLabel.setFont(font);
@@ -122,6 +125,8 @@ public class IndoorGrowModule extends JPanel
         backgroundLabel.setIcon(backgroundIcon);
         backgroundLabel.setOpaque(false);
         this.add(backgroundLabel);
+        
+        
     }
     
 }

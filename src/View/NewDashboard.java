@@ -7,6 +7,7 @@ package View;
 
 import Backend.Account;
 import Backend.Client.Client;
+import Backend.Client.ClientHandler;
 import Backend.Client.ServerMessageListener;
 import Backend.Client.ServerMessageHandler;
 import Backend.Client.ServerRequestHandler;
@@ -81,6 +82,7 @@ public class NewDashboard extends javax.swing.JFrame {
     boolean phenoLoaded = false;
     JLabel previousSelectedPin = new JLabel();
     Client client;
+    
     boolean awaitingData = false;
     //Client vars
     
@@ -138,7 +140,6 @@ public class NewDashboard extends javax.swing.JFrame {
         ServerMessageListener serverMessageListener = new ServerMessageListener(client, serverMessageHandler);
         serverMessageListener.listen();
         
-        IndoorHandler.labelPanel = this.IndoorPlantSelectionPanel;
         //this.currentRoom = new GrowRoom("97");
         //currentRoom.getGrowRoomController().setPanels(this.getIndoorPanelList());
         //IndoorHandler.setGrowRoom(currentRoom);
@@ -147,7 +148,7 @@ public class NewDashboard extends javax.swing.JFrame {
         setupSeedBank();
         setupPlantCreation();
         
-        
+        ClientHandler.setClient(client);
     }
     
     
@@ -194,7 +195,7 @@ public class NewDashboard extends javax.swing.JFrame {
         
         //scrollbar
         CustomScrollBar cs = new CustomScrollBar();
-        //indoorPlantListScrollPane.setVerticalScrollBar(cs);
+        indoorPlantListScrollPane.setVerticalScrollBar(cs);
         
         CustomScrollBar ds = new CustomScrollBar();
         //indoorPlantListScrollPane.setVerticalScrollBar(ds);
@@ -288,17 +289,7 @@ public class NewDashboard extends javax.swing.JFrame {
     }
     
     
-    
-    private ArrayList<JPanel> getIndoorPanelList()
-    {
-        ArrayList<JPanel> panelList = new ArrayList<>();
-        panelList.add(this.IndoorPlantSelectionPanel);
-        panelList.add(this.IndoorRoomDetailsPanel);
-        panelList.add(this.IndoorCalendarPanel);
-        panelList.add(this.indoorPlantListPanel);
-        
-        return panelList;
-    }
+
     
    
     private ArrayList<JLabel> getLabelList()
@@ -318,15 +309,7 @@ public class NewDashboard extends javax.swing.JFrame {
             
     }
 
-    private ArrayList<JPanel> getIndoorMapPanelList()
-    {
-        ArrayList<JPanel> panelList = new ArrayList<>();
-        panelList.add(this.leftBayPanel);
-        panelList.add(this.middleBayPanel);
-        panelList.add(this.rightBayPanel);
-        
-        return panelList;
-    }
+   
     
     private ArrayList<JPanel> getPanelList()
     {
@@ -524,10 +507,8 @@ public class NewDashboard extends javax.swing.JFrame {
 
         jPopupMenu1 = new javax.swing.JPopupMenu();
         jLabel34 = new javax.swing.JLabel();
-        alertLabel = new javax.swing.JLabel();
         navigationPane = new javax.swing.JLayeredPane();
         dragLabel = new javax.swing.JLabel();
-        profileImageIcon = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         settingsLabel = new javax.swing.JLabel();
@@ -552,19 +533,9 @@ public class NewDashboard extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        indoorPlantListScrollPane = new javax.swing.JScrollPane();
-        customIndoorListPanel = new javax.swing.JPanel();
-        customScrollBar1 = new View.customcomponents.scrollbar.CustomScrollBar();
-        jLabel35 = new javax.swing.JLabel();
-        testPanel = new javax.swing.JPanel();
-        growRoomToolPanel = new javax.swing.JPanel();
-        growroomPlantToolPanel = new javax.swing.JPanel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         bankPanel = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         inventoryPanel = new javax.swing.JPanel();
@@ -595,37 +566,21 @@ public class NewDashboard extends javax.swing.JFrame {
         inventoryListPanel = new javax.swing.JPanel();
         inventoryListPanelBackground = new javax.swing.JLabel();
         indoorPanel = new javax.swing.JPanel();
-        SelectedGrowRoomPanel = new javax.swing.JPanel();
         IndoorModulePanel = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
-        IndoorCalendarPanel = new javax.swing.JPanel();
-        IndoorPlantSelectionBackground2 = new javax.swing.JLabel();
-        indoorPlantListMapPanel = new javax.swing.JPanel();
-        jPanel6 = new javax.swing.JPanel();
-        jLabel37 = new javax.swing.JLabel();
-        addPlantToMapSelectionButtonLabel = new javax.swing.JLabel();
-        leftBayPanel = new javax.swing.JPanel();
-        middleBayPanel = new javax.swing.JPanel();
-        rightBayPanel = new javax.swing.JPanel();
-        indoorPlantListPanel = new javax.swing.JPanel();
-        IndoorRoomDetailsPanel = new javax.swing.JPanel();
-        IndoorPlantSelectionBackground1 = new javax.swing.JLabel();
-        IndoorPlantSelectionPanel = new javax.swing.JPanel();
-        IndoorPlantSelectionNameLabel = new javax.swing.JLabel();
-        IndoorPlantSelectionBreeder = new javax.swing.JLabel();
-        IndoorPlantSelectionMotherIdLabel = new javax.swing.JLabel();
-        PlantProfileStrainLabel = new javax.swing.JLabel();
-        IndoorPlantViewLabel1 = new javax.swing.JLabel();
-        IndoorPlantViewLabel2 = new javax.swing.JLabel();
-        IndoorPlantViewLabel3 = new javax.swing.JLabel();
-        IndoorPlantViewLabel4 = new javax.swing.JLabel();
-        IndoorPlantSelectionNameLabel7 = new javax.swing.JLabel();
-        IndoorPlantSelectionNameLabel1 = new javax.swing.JLabel();
-        IndoorPlantSelectionNameLabel6 = new javax.swing.JLabel();
-        IndoorPlantSelectionNameLabel5 = new javax.swing.JLabel();
-        IndoorPlantSelectionBackground = new javax.swing.JLabel();
-        indoorPlantListPanel1 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
+        SelectedGrowRoomPanel = new javax.swing.JPanel();
+        indoorPlantListScrollPane = new javax.swing.JScrollPane();
+        customIndoorListPanel = new javax.swing.JPanel();
+        jLabel35 = new javax.swing.JLabel();
+        testPanel = new javax.swing.JPanel();
+        growRoomToolPanel = new javax.swing.JPanel();
+        growroomPlantToolPanel = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         outdoorPanel = new javax.swing.JPanel();
         plantCreationPanel = new javax.swing.JPanel();
         pcGrowIdText = new javax.swing.JTextField();
@@ -653,7 +608,6 @@ public class NewDashboard extends javax.swing.JFrame {
         addPackQuantityCounterLabel = new javax.swing.JLabel();
         addPackCheckPanelBackground = new javax.swing.JLabel();
         addPackPanel = new javax.swing.JPanel();
-        packImageLabel1 = new javax.swing.JLabel();
         helpAdminLabel = new javax.swing.JLabel();
         addPackClearLabel = new javax.swing.JLabel();
         addPackDescriptionArea = new javax.swing.JTextArea();
@@ -900,19 +854,10 @@ public class NewDashboard extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        alertLabel.setBackground(new java.awt.Color(0, 255, 255));
-        getContentPane().add(alertLabel);
-        alertLabel.setBounds(0, 10, 80, 70);
-
         navigationPane.setBackground(new java.awt.Color(55, 62, 72));
         navigationPane.setOpaque(true);
         navigationPane.add(dragLabel);
         dragLabel.setBounds(0, 0, 1260, 100);
-
-        profileImageIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        profileImageIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/UI Icons/Navigation/dropletIcon.png"))); // NOI18N
-        navigationPane.add(profileImageIcon);
-        profileImageIcon.setBounds(0, 0, 100, 100);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -1174,82 +1119,19 @@ public class NewDashboard extends javax.swing.JFrame {
         dashboardPanel.add(jButton3);
         jButton3.setBounds(330, 770, 51, 22);
 
-        indoorPlantListScrollPane.setBackground(new java.awt.Color(0, 0, 0));
-        indoorPlantListScrollPane.setBorder(null);
-        indoorPlantListScrollPane.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        indoorPlantListScrollPane.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-        indoorPlantListScrollPane.setAutoscrolls(true);
-        indoorPlantListScrollPane.setOpaque(false);
-        indoorPlantListScrollPane.setVerticalScrollBar(customScrollBar1);
-        indoorPlantListScrollPane.setViewportView(customIndoorListPanel);
+        jPanel1.setLayout(null);
 
-        customIndoorListPanel.setBackground(new java.awt.Color(42, 46, 45));
-        customIndoorListPanel.setPreferredSize(new java.awt.Dimension(380, 894));
-        customIndoorListPanel.setLayout(null);
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/GrowModules/DemoModule.png"))); // NOI18N
+        jLabel6.setText("jLabel6");
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(0, 0, 507, 201);
 
-        customScrollBar1.setOpaque(false);
-        customIndoorListPanel.add(customScrollBar1);
-        customScrollBar1.setBounds(360, 10, 20, 480);
-        customScrollBar1.getAccessibleContext().setAccessibleParent(indoorPlantListScrollPane);
+        jLabel7.setText("jLabel7");
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(380, 130, 120, 60);
 
-        jLabel35.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/plantListGraphic.png"))); // NOI18N
-        jLabel35.setText("jLabel35");
-        customIndoorListPanel.add(jLabel35);
-        jLabel35.setBounds(0, 0, 380, 894);
-        jLabel35.getAccessibleContext().setAccessibleParent(indoorPlantListScrollPane);
-
-        indoorPlantListScrollPane.setViewportView(customIndoorListPanel);
-
-        dashboardPanel.add(indoorPlantListScrollPane);
-        indoorPlantListScrollPane.setBounds(5, 10, 380, 490);
-
-        testPanel.setOpaque(false);
-        testPanel.setLayout(null);
-
-        growRoomToolPanel.setOpaque(false);
-        growRoomToolPanel.setLayout(null);
-
-        growroomPlantToolPanel.setOpaque(false);
-        growroomPlantToolPanel.setLayout(null);
-
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/growroomPlantToolPanel.png"))); // NOI18N
-        growroomPlantToolPanel.add(jLabel30);
-        jLabel30.setBounds(0, 0, 725, 296);
-
-        growRoomToolPanel.add(growroomPlantToolPanel);
-        growroomPlantToolPanel.setBounds(0, 0, 725, 296);
-
-        testPanel.add(growRoomToolPanel);
-        growRoomToolPanel.setBounds(15, 575, 720, 310);
-
-        jLabel31.setBackground(new java.awt.Color(38, 38, 38));
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/wateringIcon.png"))); // NOI18N
-        testPanel.add(jLabel31);
-        jLabel31.setBounds(570, 535, 30, 30);
-
-        jLabel26.setBackground(new java.awt.Color(38, 38, 38));
-        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/plantIcon.png"))); // NOI18N
-        jLabel26.setOpaque(true);
-        testPanel.add(jLabel26);
-        jLabel26.setBounds(650, 535, 30, 30);
-
-        jLabel27.setBackground(new java.awt.Color(38, 38, 38));
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/growLightIcon.png"))); // NOI18N
-        testPanel.add(jLabel27);
-        jLabel27.setBounds(610, 535, 30, 30);
-
-        jLabel2.setBackground(new java.awt.Color(38, 38, 38));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/plantStatsIcon.png"))); // NOI18N
-        testPanel.add(jLabel2);
-        jLabel2.setBounds(690, 535, 30, 30);
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/growroomSelectionPanel.png"))); // NOI18N
-        testPanel.add(jLabel5);
-        jLabel5.setBounds(0, 0, 750, 895);
-
-        dashboardPanel.add(testPanel);
-        testPanel.setBounds(400, 10, 750, 895);
+        dashboardPanel.add(jPanel1);
+        jPanel1.setBounds(220, 210, 510, 200);
 
         contentLayeredPane.add(dashboardPanel);
         dashboardPanel.setBounds(0, 0, 1160, 915);
@@ -1475,11 +1357,12 @@ public class NewDashboard extends javax.swing.JFrame {
         indoorPanel.setBackground(new java.awt.Color(42, 46, 45));
         indoorPanel.setLayout(null);
 
-        SelectedGrowRoomPanel.setBackground(new java.awt.Color(0, 0, 0));
-        SelectedGrowRoomPanel.setEnabled(false);
-        SelectedGrowRoomPanel.setLayout(null);
-
         IndoorModulePanel.setBackground(new java.awt.Color(42, 46, 45));
+        IndoorModulePanel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                IndoorModulePanelMouseEntered(evt);
+            }
+        });
         IndoorModulePanel.setLayout(null);
 
         jPanel9.setOpaque(false);
@@ -1487,195 +1370,86 @@ public class NewDashboard extends javax.swing.JFrame {
         IndoorModulePanel.add(jPanel9);
         jPanel9.setBounds(0, 0, 1160, 915);
 
-        SelectedGrowRoomPanel.add(IndoorModulePanel);
+        indoorPanel.add(IndoorModulePanel);
         IndoorModulePanel.setBounds(0, 0, 1160, 915);
 
-        IndoorCalendarPanel.setOpaque(false);
-        IndoorCalendarPanel.setLayout(null);
+        SelectedGrowRoomPanel.setBackground(new java.awt.Color(0, 0, 0));
+        SelectedGrowRoomPanel.setEnabled(false);
+        SelectedGrowRoomPanel.setLayout(null);
 
-        IndoorPlantSelectionBackground2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        IndoorPlantSelectionBackground2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/PanelBackground.png"))); // NOI18N
-        IndoorPlantSelectionBackground2.setText("Selected Plant Info");
-        IndoorPlantSelectionBackground2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        IndoorCalendarPanel.add(IndoorPlantSelectionBackground2);
-        IndoorPlantSelectionBackground2.setBounds(0, 0, 360, 448);
+        indoorPlantListScrollPane.setBackground(new java.awt.Color(0, 0, 0));
+        indoorPlantListScrollPane.setBorder(null);
+        indoorPlantListScrollPane.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        indoorPlantListScrollPane.setAutoscrolls(true);
+        indoorPlantListScrollPane.setEnabled(false);
+        indoorPlantListScrollPane.setOpaque(false);
+        indoorPlantListScrollPane.setViewportView(customIndoorListPanel);
 
-        SelectedGrowRoomPanel.add(IndoorCalendarPanel);
-        IndoorCalendarPanel.setBounds(780, 10, 360, 450);
+        customIndoorListPanel.setBackground(new java.awt.Color(42, 46, 45));
+        customIndoorListPanel.setOpaque(false);
+        customIndoorListPanel.setPreferredSize(new java.awt.Dimension(380, 894));
+        customIndoorListPanel.setLayout(null);
 
-        indoorPlantListMapPanel.setBackground(new java.awt.Color(102, 102, 102));
-        indoorPlantListMapPanel.setEnabled(false);
-        indoorPlantListMapPanel.setLayout(null);
+        jLabel35.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/plantListGraphic.png"))); // NOI18N
+        jLabel35.setText("jLabel35");
+        jLabel35.setOpaque(true);
+        customIndoorListPanel.add(jLabel35);
+        jLabel35.setBounds(0, 0, 380, 894);
+        jLabel35.getAccessibleContext().setAccessibleParent(indoorPlantListScrollPane);
 
-        jPanel6.setLayout(null);
+        indoorPlantListScrollPane.setViewportView(customIndoorListPanel);
 
-        jLabel37.setText("jLabel37");
-        jPanel6.add(jLabel37);
-        jLabel37.setBounds(89, 22, 50, 50);
+        SelectedGrowRoomPanel.add(indoorPlantListScrollPane);
+        indoorPlantListScrollPane.setBounds(5, 10, 380, 894);
 
-        addPlantToMapSelectionButtonLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        addPlantToMapSelectionButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        addPlantToMapSelectionButtonLabel.setText("+");
-        addPlantToMapSelectionButtonLabel.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                addPlantToMapSelectionButtonLabelMouseReleased(evt);
-            }
-        });
-        jPanel6.add(addPlantToMapSelectionButtonLabel);
-        addPlantToMapSelectionButtonLabel.setBounds(20, 21, 50, 50);
+        testPanel.setEnabled(false);
+        testPanel.setOpaque(false);
+        testPanel.setLayout(null);
 
-        indoorPlantListMapPanel.add(jPanel6);
-        jPanel6.setBounds(970, 10, 160, 400);
+        growRoomToolPanel.setOpaque(false);
+        growRoomToolPanel.setLayout(null);
 
-        leftBayPanel.setLayout(null);
-        indoorPlantListMapPanel.add(leftBayPanel);
-        leftBayPanel.setBounds(10, 15, 390, 390);
+        growroomPlantToolPanel.setOpaque(false);
+        growroomPlantToolPanel.setLayout(null);
 
-        javax.swing.GroupLayout middleBayPanelLayout = new javax.swing.GroupLayout(middleBayPanel);
-        middleBayPanel.setLayout(middleBayPanelLayout);
-        middleBayPanelLayout.setHorizontalGroup(
-            middleBayPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 150, Short.MAX_VALUE)
-        );
-        middleBayPanelLayout.setVerticalGroup(
-            middleBayPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 390, Short.MAX_VALUE)
-        );
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/growroomPlantToolPanel.png"))); // NOI18N
+        growroomPlantToolPanel.add(jLabel30);
+        jLabel30.setBounds(0, 0, 725, 296);
 
-        indoorPlantListMapPanel.add(middleBayPanel);
-        middleBayPanel.setBounds(410, 15, 150, 390);
+        growRoomToolPanel.add(growroomPlantToolPanel);
+        growroomPlantToolPanel.setBounds(0, 0, 725, 296);
 
-        javax.swing.GroupLayout rightBayPanelLayout = new javax.swing.GroupLayout(rightBayPanel);
-        rightBayPanel.setLayout(rightBayPanelLayout);
-        rightBayPanelLayout.setHorizontalGroup(
-            rightBayPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 390, Short.MAX_VALUE)
-        );
-        rightBayPanelLayout.setVerticalGroup(
-            rightBayPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 390, Short.MAX_VALUE)
-        );
+        testPanel.add(growRoomToolPanel);
+        growRoomToolPanel.setBounds(15, 575, 720, 310);
 
-        indoorPlantListMapPanel.add(rightBayPanel);
-        rightBayPanel.setBounds(570, 15, 390, 390);
+        jLabel31.setBackground(new java.awt.Color(38, 38, 38));
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/wateringIcon.png"))); // NOI18N
+        testPanel.add(jLabel31);
+        jLabel31.setBounds(570, 535, 30, 30);
 
-        SelectedGrowRoomPanel.add(indoorPlantListMapPanel);
-        indoorPlantListMapPanel.setBounds(10, 485, 1140, 420);
+        jLabel26.setBackground(new java.awt.Color(38, 38, 38));
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/plantIcon.png"))); // NOI18N
+        jLabel26.setOpaque(true);
+        testPanel.add(jLabel26);
+        jLabel26.setBounds(650, 535, 30, 30);
 
-        indoorPlantListPanel.setBackground(new java.awt.Color(102, 102, 102));
-        indoorPlantListPanel.setEnabled(false);
-        indoorPlantListPanel.setLayout(null);
-        SelectedGrowRoomPanel.add(indoorPlantListPanel);
-        indoorPlantListPanel.setBounds(10, 485, 1140, 420);
+        jLabel27.setBackground(new java.awt.Color(38, 38, 38));
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/growLightIcon.png"))); // NOI18N
+        testPanel.add(jLabel27);
+        jLabel27.setBounds(610, 535, 30, 30);
 
-        IndoorRoomDetailsPanel.setOpaque(false);
-        IndoorRoomDetailsPanel.setLayout(null);
+        jLabel2.setBackground(new java.awt.Color(38, 38, 38));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/plantStatsIcon.png"))); // NOI18N
+        testPanel.add(jLabel2);
+        jLabel2.setBounds(690, 535, 30, 30);
 
-        IndoorPlantSelectionBackground1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        IndoorPlantSelectionBackground1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/PanelBackground.png"))); // NOI18N
-        IndoorPlantSelectionBackground1.setText("Selected Plant Info");
-        IndoorPlantSelectionBackground1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        IndoorRoomDetailsPanel.add(IndoorPlantSelectionBackground1);
-        IndoorPlantSelectionBackground1.setBounds(0, 0, 360, 448);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/growroomSelectionPanel.png"))); // NOI18N
+        testPanel.add(jLabel5);
+        jLabel5.setBounds(0, 0, 750, 895);
 
-        SelectedGrowRoomPanel.add(IndoorRoomDetailsPanel);
-        IndoorRoomDetailsPanel.setBounds(395, 10, 360, 450);
-
-        IndoorPlantSelectionPanel.setOpaque(false);
-        IndoorPlantSelectionPanel.setLayout(null);
-
-        IndoorPlantSelectionNameLabel.setFont(new java.awt.Font("Sylfaen", 0, 20)); // NOI18N
-        IndoorPlantSelectionNameLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        IndoorPlantSelectionNameLabel.setText("Plant Tag");
-        IndoorPlantSelectionPanel.add(IndoorPlantSelectionNameLabel);
-        IndoorPlantSelectionNameLabel.setBounds(20, 200, 320, 30);
-
-        IndoorPlantSelectionBreeder.setFont(new java.awt.Font("Sylfaen", 0, 12)); // NOI18N
-        IndoorPlantSelectionBreeder.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        IndoorPlantSelectionBreeder.setText("breeder");
-        IndoorPlantSelectionPanel.add(IndoorPlantSelectionBreeder);
-        IndoorPlantSelectionBreeder.setBounds(90, 160, 180, 16);
-
-        IndoorPlantSelectionMotherIdLabel.setFont(new java.awt.Font("Sylfaen", 0, 12)); // NOI18N
-        IndoorPlantSelectionMotherIdLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        IndoorPlantSelectionMotherIdLabel.setText("mother id");
-        IndoorPlantSelectionPanel.add(IndoorPlantSelectionMotherIdLabel);
-        IndoorPlantSelectionMotherIdLabel.setBounds(131, 177, 98, 16);
-
-        PlantProfileStrainLabel.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        PlantProfileStrainLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PlantProfileStrainLabel.setText("Northern Lights");
-        IndoorPlantSelectionPanel.add(PlantProfileStrainLabel);
-        PlantProfileStrainLabel.setBounds(0, 130, 360, 30);
-
-        IndoorPlantViewLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        IndoorPlantViewLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/InteractBubbleSmall.png"))); // NOI18N
-        IndoorPlantSelectionPanel.add(IndoorPlantViewLabel1);
-        IndoorPlantViewLabel1.setBounds(38, 410, 65, 60);
-
-        IndoorPlantViewLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        IndoorPlantViewLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/InteractBubbleSmall.png"))); // NOI18N
-        IndoorPlantSelectionPanel.add(IndoorPlantViewLabel2);
-        IndoorPlantViewLabel2.setBounds(115, 410, 65, 60);
-
-        IndoorPlantViewLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        IndoorPlantViewLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/InteractBubbleSmall.png"))); // NOI18N
-        IndoorPlantSelectionPanel.add(IndoorPlantViewLabel3);
-        IndoorPlantViewLabel3.setBounds(192, 410, 65, 60);
-
-        IndoorPlantViewLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        IndoorPlantViewLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/InteractBubbleSmall.png"))); // NOI18N
-        IndoorPlantSelectionPanel.add(IndoorPlantViewLabel4);
-        IndoorPlantViewLabel4.setBounds(269, 410, 65, 60);
-
-        IndoorPlantSelectionNameLabel7.setFont(new java.awt.Font("Sylfaen", 0, 20)); // NOI18N
-        IndoorPlantSelectionNameLabel7.setText("Growth Stage");
-        IndoorPlantSelectionPanel.add(IndoorPlantSelectionNameLabel7);
-        IndoorPlantSelectionNameLabel7.setBounds(200, 250, 120, 30);
-
-        IndoorPlantSelectionNameLabel1.setFont(new java.awt.Font("Sylfaen", 0, 20)); // NOI18N
-        IndoorPlantSelectionNameLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        IndoorPlantSelectionNameLabel1.setText("Week");
-        IndoorPlantSelectionPanel.add(IndoorPlantSelectionNameLabel1);
-        IndoorPlantSelectionNameLabel1.setBounds(30, 250, 98, 30);
-
-        IndoorPlantSelectionNameLabel6.setFont(new java.awt.Font("Sylfaen", 0, 20)); // NOI18N
-        IndoorPlantSelectionNameLabel6.setText("Distance To Light");
-        IndoorPlantSelectionPanel.add(IndoorPlantSelectionNameLabel6);
-        IndoorPlantSelectionNameLabel6.setBounds(190, 310, 160, 30);
-
-        IndoorPlantSelectionNameLabel5.setFont(new java.awt.Font("Sylfaen", 0, 20)); // NOI18N
-        IndoorPlantSelectionNameLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        IndoorPlantSelectionNameLabel5.setText("Plant Height");
-        IndoorPlantSelectionPanel.add(IndoorPlantSelectionNameLabel5);
-        IndoorPlantSelectionNameLabel5.setBounds(30, 310, 120, 30);
-
-        IndoorPlantSelectionBackground.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        IndoorPlantSelectionBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/PanelBackground.png"))); // NOI18N
-        IndoorPlantSelectionBackground.setText("Selected Plant Info");
-        IndoorPlantSelectionBackground.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        IndoorPlantSelectionPanel.add(IndoorPlantSelectionBackground);
-        IndoorPlantSelectionBackground.setBounds(0, 0, 360, 448);
-
-        SelectedGrowRoomPanel.add(IndoorPlantSelectionPanel);
-        IndoorPlantSelectionPanel.setBounds(15, 10, 360, 470);
-
-        indoorPlantListPanel1.setBackground(new java.awt.Color(102, 102, 102));
-        indoorPlantListPanel1.setLayout(null);
-        SelectedGrowRoomPanel.add(indoorPlantListPanel1);
-        indoorPlantListPanel1.setBounds(10, 485, 1140, 420);
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("View Map");
-        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                jLabel6MouseReleased(evt);
-            }
-        });
-        SelectedGrowRoomPanel.add(jLabel6);
-        jLabel6.setBounds(500, 460, 110, 30);
+        SelectedGrowRoomPanel.add(testPanel);
+        testPanel.setBounds(400, 10, 750, 895);
 
         indoorPanel.add(SelectedGrowRoomPanel);
         SelectedGrowRoomPanel.setBounds(0, 0, 1160, 915);
@@ -1859,10 +1633,6 @@ public class NewDashboard extends javax.swing.JFrame {
         addPackPanel.setBackground(new java.awt.Color(255, 255, 255));
         addPackPanel.setOpaque(false);
         addPackPanel.setLayout(null);
-
-        packImageLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/seedbank/cultivars/solfire-gardens-sol-sonic.jpg"))); // NOI18N
-        addPackPanel.add(packImageLabel1);
-        packImageLabel1.setBounds(20, 49, 350, 350);
 
         helpAdminLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseReleased(java.awt.event.MouseEvent evt) {
@@ -3361,11 +3131,13 @@ public class NewDashboard extends javax.swing.JFrame {
         phenoFinderPanel.setBounds(320, 200, 520, 610);
 
         editSlotPanel.setBackground(new java.awt.Color(0, 0, 0));
+        editSlotPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         editSlotPanel.setPreferredSize(new java.awt.Dimension(372, 600));
         editSlotPanel.setLayout(null);
 
         searchIconLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         searchIconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/UI Icons/Cloning/searchIcon.png"))); // NOI18N
+        searchIconLabel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
         searchIconLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         searchIconLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseReleased(java.awt.event.MouseEvent evt) {
@@ -4100,7 +3872,7 @@ public class NewDashboard extends javax.swing.JFrame {
         
         
         //client.sendMessageToServer("RequestData:PlantList:97");
-        this.indoorPlantListMapPanel.setVisible(false);
+     
         client.sendMessageToServer("RequestData:GrowRoom:29");
 
         //requestHandler.sendRequest("RequestData PlantList 97");
@@ -4506,17 +4278,6 @@ public class NewDashboard extends javax.swing.JFrame {
     private void settingsLabelMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_settingsLabelMouseReleased
         client.disconnectFromServer();
     }//GEN-LAST:event_settingsLabelMouseReleased
-
-    private void jLabel6MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseReleased
-        this.indoorPlantListPanel.setVisible(false);
-        this.indoorPlantListMapPanel.setVisible((true));
-        IndoorMap indoorMap = new IndoorMap("97", this.getIndoorMapPanelList());
-        
-    }//GEN-LAST:event_jLabel6MouseReleased
-
-    private void addPlantToMapSelectionButtonLabelMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addPlantToMapSelectionButtonLabelMouseReleased
-        
-    }//GEN-LAST:event_addPlantToMapSelectionButtonLabelMouseReleased
 
     private void addPackConfirmationTrueLabelMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addPackConfirmationTrueLabelMouseReleased
         //this.addPackCheckPanel.setVisible(false);
@@ -5042,6 +4803,10 @@ public class NewDashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_CloneMachine2Slot1MouseEntered
 
+    private void IndoorModulePanelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IndoorModulePanelMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_IndoorModulePanelMouseEntered
+
     private static JFrame datFram;
     
     
@@ -5165,25 +4930,7 @@ public class NewDashboard extends javax.swing.JFrame {
     private javax.swing.JLabel F4;
     private javax.swing.JLabel F5;
     private javax.swing.JLabel F6;
-    private javax.swing.JPanel IndoorCalendarPanel;
     private javax.swing.JPanel IndoorModulePanel;
-    private javax.swing.JLabel IndoorPlantSelectionBackground;
-    private javax.swing.JLabel IndoorPlantSelectionBackground1;
-    private javax.swing.JLabel IndoorPlantSelectionBackground2;
-    private javax.swing.JLabel IndoorPlantSelectionBreeder;
-    private javax.swing.JLabel IndoorPlantSelectionMotherIdLabel;
-    private javax.swing.JLabel IndoorPlantSelectionNameLabel;
-    private javax.swing.JLabel IndoorPlantSelectionNameLabel1;
-    private javax.swing.JLabel IndoorPlantSelectionNameLabel5;
-    private javax.swing.JLabel IndoorPlantSelectionNameLabel6;
-    private javax.swing.JLabel IndoorPlantSelectionNameLabel7;
-    private javax.swing.JPanel IndoorPlantSelectionPanel;
-    private javax.swing.JLabel IndoorPlantViewLabel1;
-    private javax.swing.JLabel IndoorPlantViewLabel2;
-    private javax.swing.JLabel IndoorPlantViewLabel3;
-    private javax.swing.JLabel IndoorPlantViewLabel4;
-    private javax.swing.JPanel IndoorRoomDetailsPanel;
-    private javax.swing.JLabel PlantProfileStrainLabel;
     private javax.swing.JPanel SelectedGrowRoomPanel;
     private javax.swing.JLabel addCloneLabel;
     private javax.swing.JLabel addPackAddQuanitityLabel;
@@ -5207,8 +4954,6 @@ public class NewDashboard extends javax.swing.JFrame {
     private javax.swing.JLabel addPackSubQuanitityLabel;
     private javax.swing.JTextField addPackTerpeneProfileField;
     private javax.swing.JTextField addPackYieldField;
-    private javax.swing.JLabel addPlantToMapSelectionButtonLabel;
-    private javax.swing.JLabel alertLabel;
     private javax.swing.JLabel backToPackDisplayLabel;
     private javax.swing.JLabel backgroundBlurLabel;
     private javax.swing.JLabel bankLabel;
@@ -5248,7 +4993,6 @@ public class NewDashboard extends javax.swing.JFrame {
     private javax.swing.JLabel clonesSideLabel;
     private javax.swing.JLayeredPane contentLayeredPane;
     private javax.swing.JPanel customIndoorListPanel;
-    private View.customcomponents.scrollbar.CustomScrollBar customScrollBar1;
     private javax.swing.JPanel dashboardPanel;
     private javax.swing.JTextArea descriptionArea;
     private javax.swing.JLabel dragLabel;
@@ -5274,9 +5018,6 @@ public class NewDashboard extends javax.swing.JFrame {
     private javax.swing.JLabel idTitleLabel;
     private javax.swing.JLabel indoorLabel;
     private javax.swing.JPanel indoorPanel;
-    private javax.swing.JPanel indoorPlantListMapPanel;
-    private javax.swing.JPanel indoorPlantListPanel;
-    private javax.swing.JPanel indoorPlantListPanel1;
     private javax.swing.JScrollPane indoorPlantListScrollPane;
     private javax.swing.JLabel indoorSideLabel;
     private javax.swing.JLabel inventoryAddItemBackground;
@@ -5339,7 +5080,6 @@ public class NewDashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
@@ -5370,18 +5110,18 @@ public class NewDashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel74;
     private javax.swing.JLabel jLabel75;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JPanel leftBayPanel;
     private javax.swing.JLabel locationCell1;
     private javax.swing.JLabel locationCell10;
     private javax.swing.JLabel locationCell2;
@@ -5394,7 +5134,6 @@ public class NewDashboard extends javax.swing.JFrame {
     private javax.swing.JLabel locationCell9;
     private javax.swing.JLabel locationLabel;
     private javax.swing.JLabel locationTitleLab;
-    private javax.swing.JPanel middleBayPanel;
     private javax.swing.JTextField motherIdTextField;
     private javax.swing.JLabel motherplantsSideLabel;
     private javax.swing.JLabel nLabel;
@@ -5409,7 +5148,6 @@ public class NewDashboard extends javax.swing.JFrame {
     private javax.swing.JLabel packFloweringTimeLabel;
     private javax.swing.JLabel packIdLabel;
     private javax.swing.JLabel packImageLabel;
-    private javax.swing.JLabel packImageLabel1;
     private javax.swing.JLabel packLineageLabel;
     private javax.swing.JLabel packReleaseLabel;
     private javax.swing.JLabel packSeedTypeLabel;
@@ -5429,8 +5167,6 @@ public class NewDashboard extends javax.swing.JFrame {
     private javax.swing.JLabel phenotypesLabel;
     private javax.swing.JPanel phenotypesPanel;
     private javax.swing.JPanel plantCreationPanel;
-    private javax.swing.JLabel profileImageIcon;
-    private javax.swing.JPanel rightBayPanel;
     private javax.swing.JLabel searchFeedbackLabel;
     private javax.swing.JTextField searchField;
     private javax.swing.JLabel searchIconLabel;
