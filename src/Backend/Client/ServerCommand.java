@@ -6,6 +6,8 @@
 package Backend.Client;
 
 import java.io.BufferedWriter;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 
 /**
  *
@@ -26,9 +28,20 @@ public class ServerCommand implements ServerCommandInterface
        System.out.println("you accessed the parents run cmd");
     }
     
+    public ServerCommand createCommand(String commandName, String classPath)
+    {
+        try 
+        {
+            Class<?> commandClass = Class.forName(classPath);
+            Constructor<?> cons = commandClass.getConstructor(ServerCommand.class);
+            Object command = cons.newInstance(commandName);
+            return (ServerCommand)command;
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
+            e.printStackTrace();
+            return null;
+        }
     
-    
-    
+    }
     @Override
     public void runCommand()
     {

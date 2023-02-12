@@ -76,7 +76,7 @@ public class PlantListPanel extends JPanel
         this.hoverLabel.setVisible(false);
         
         
-        JLabel indoorHitboxLabel = new IndoorHitboxLabel(this.hoverLabel);
+        JLabel indoorHitboxLabel = new IndoorHitboxLabel(this.hoverLabel, plant.getPlantId());
         indoorHitboxLabel.setBounds(0, 0, 350, 45);
         
         

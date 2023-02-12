@@ -18,17 +18,19 @@ import javax.swing.JLabel;
 public class IndoorHitboxLabel extends JLabel
 {
     protected JLabel hoverLabel;
+    protected String plantId;
     
-    public IndoorHitboxLabel(JLabel hoverLabel)
+    public IndoorHitboxLabel(JLabel hoverLabel, String plantId)
     {
        this.hoverLabel = hoverLabel;
+       this.plantId = plantId;
        
        addMouseListener(new MouseAdapter()
         {
             @Override
-            public void mousePressed(MouseEvent me)
+            public void mouseReleased(MouseEvent me)
             {
-                pressed();
+                released();
             }
             
             @Override
@@ -48,6 +50,9 @@ public class IndoorHitboxLabel extends JLabel
     public void entered()
     {
         this.hoverLabel.setVisible(true);
+        Cursor cursor = new Cursor(Cursor.HAND_CURSOR);
+        this.setCursor(cursor);
+        
     }
     
     public void exited()
@@ -56,9 +61,9 @@ public class IndoorHitboxLabel extends JLabel
         this.hoverLabel.setVisible(false);
     }
     
-    public void pressed()
+    public void released()
     {
-        
+      System.out.println("Test loading plant " + plantId);
         
     }
     

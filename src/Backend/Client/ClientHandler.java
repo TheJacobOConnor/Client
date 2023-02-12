@@ -19,9 +19,10 @@ public class ClientHandler
     }
     
 
-    public static void setClient(Client client)
+    public static void setClient(Client newClient)
     {
-        client = client;
+        client = newClient;
+        System.out.println("client set");
     }
     
     

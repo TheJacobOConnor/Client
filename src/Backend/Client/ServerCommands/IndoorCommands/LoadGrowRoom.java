@@ -1,15 +1,13 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Backend.Client.ServerCommands.IndoorCommands;
 
 import Backend.Client.ServerCommand;
 import Backend.GrowRoomData.GrowModuleHandler;
 import Backend.GrowRoomData.GrowRoom;
-import Backend.Indoor.IndoorHandler;
-import View.customcomponents.customGrowRoom.panels.IndoorGrowModule;
+import Backend.GrowRoomData.GrowRoomController;
 
 /**
  *
@@ -17,21 +15,22 @@ import View.customcomponents.customGrowRoom.panels.IndoorGrowModule;
  */
 public class LoadGrowRoom extends ServerCommand
 {
-
-    @Override
-    public String getCommandName() {
-        return super.getCommandName(); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void runCommand() {
-        super.runCommand(); //To change body of generated methods, choose Tools | Templates.
-    }
-
-   
-    public LoadGrowRoom(String commandName)
+    
+    public LoadGrowRoom(String commandName) 
     {
         super(commandName);
+    }
+    
+    @Override
+    public String getCommandName()
+    {
+        return super.getCommandName();
+    }
+
+    @Override
+    public void runCommand()
+    {
+        super.runCommand();
     }
     
     @Override
@@ -43,9 +42,10 @@ public class LoadGrowRoom extends ServerCommand
         GrowRoom newRoom = new GrowRoom();
         newRoom.build(args[1]);
         System.out.println(newRoom.getRoomName() + " was built.");
-        GrowModuleHandler.addNewModule(newRoom);
+        GrowRoomController.setActiveGrowRoom(newRoom);
         
         
         
     }
+    
 }

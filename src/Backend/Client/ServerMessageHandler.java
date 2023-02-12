@@ -6,12 +6,15 @@
 package Backend.Client;
 
 import Backend.Client.ServerCommands.IndoorCommands.LoadGrowRoom;
+import Backend.Client.ServerCommands.IndoorCommands.LoadGrowRoomModule;
 import Backend.Client.ServerCommands.InventoryCommands.LoadInventory;
 import Backend.Client.ServerCommands.SeedBankCommands.LoadSeedPacks;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -24,7 +27,7 @@ public final class ServerMessageHandler
 {
     protected ArrayList<ServerCommand> serverCommandList = new ArrayList<>();
     
-    public ServerMessageHandler()
+    public ServerMessageHandler() throws ClassNotFoundException, NoSuchMethodException
     {
         this.serverCommandList = loadServerCommands();
     }
@@ -49,15 +52,22 @@ public final class ServerMessageHandler
         }
     }
     
-    public ArrayList<ServerCommand> loadServerCommands() 
+    public ArrayList<ServerCommand> loadServerCommands() throws ClassNotFoundException, NoSuchMethodException
     {
+        //ArrayList<ServerCommand> commandList = new ArrayList<>();
+        
+        
         ArrayList<ServerCommand> commandList = new ArrayList<>();
-        LoadGrowRoom loadGrowRoom = new LoadGrowRoom("LoadGrowRoom");
+        
+        LoadGrowRoomModule loadGrowRoomModule = new LoadGrowRoomModule("LoadGrowRoomModule");
         LoadSeedPacks loadSeedPacks = new LoadSeedPacks("LoadSeedPacks");
         LoadInventory loadInventory = new LoadInventory("LoadInventory");
-        commandList.add(loadGrowRoom);
+        LoadGrowRoom loadGrowRoom = new LoadGrowRoom("LoadGrowRoom");
+        
+        commandList.add(loadGrowRoomModule);
         commandList.add(loadSeedPacks);
         commandList.add(loadInventory);
+        commandList.add(loadGrowRoom);
         
         
         /*Path filePath = Paths.get("src/Backend/Client/ServerCommands/serverCommandList.txt");
@@ -68,14 +78,32 @@ public final class ServerMessageHandler
             String currentLine = bufferedReader.readLine();
             while(currentLine != null)
             {
-                String commandName = currentLine;
+                String[] commandSplit = currentLine.split(",");
+                
+                String commandName = commandSplit[0];
+                String commandPath = commandSplit[1];
+                
+                ServerCommand newCommand = new ServerCommand(commandName);
+                newCommand = newCommand.createCommand(commandName, commandPath);
                 
                 System.out.println(commandName + " loaded.");
                 
-                Object newCommand = Class.forName(commandName).newInstance();
+                if(newCommand != null)
+                {
+                    commandList.add(newCommand);
+                }
                 
+                //Object newCommand = Class.forName(commandName).newInstance();
+                /*try
+                {
+                    Class<?> c = Class.forName(commandPath);
+                    Constructor<?> cons = c.getConstructor(String.class);
+                    Object newCommand = cons.newInstance(commandName);
+
+                    //commandList.add((ServerCommand)newCommand);
+                    commandList.add((ServerCommand)newCommand);
+                }
                 
-                commandList.add((ServerCommand)newCommand);
                 currentLine = bufferedReader.readLine();
             }
         }

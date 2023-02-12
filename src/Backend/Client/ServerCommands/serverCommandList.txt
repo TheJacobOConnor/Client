@@ -1,2 +1,3 @@
-Backend.Client.ServerCommands.IndoorCommands.LoadGrowRoom
-PrintToClientConsole
+LoadGrowRoom,Backend.Client.ServerCommands.IndoorCommands.LoadGrowRoom
+LoadSeedPacks,Backend.Client.ServerCommands.SeedBankCommands.LoadSeedPacks
+LoadInventory,Backend.Client.ServerCommands.InventoryCommands.LoadInventory
