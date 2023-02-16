@@ -5,6 +5,7 @@
 package View.customcomponents.customGrowRoom.panels;
 
 import Backend.GrowRoomData.GrowRoomController;
+import Backend.Indoor.IndoorPlantListHandler;
 import View.customcomponents.customMisc.SelectionLabelMisc;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -22,6 +23,7 @@ public class GrowModuleSelectionLabel extends SelectionLabelMisc {
         @Override
         public void mouseReleased(MouseEvent e) {
             GrowRoomController.requestGrowRoom("RequestData:GrowRoom:" + roomId);
+            IndoorPlantListHandler.requestPlantList(roomid);
         }
         });
     }

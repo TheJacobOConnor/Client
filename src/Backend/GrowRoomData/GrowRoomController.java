@@ -23,6 +23,7 @@ public class GrowRoomController
     protected static JPanel growRoomOverviewPanel;
     protected static JPanel growRoomToolPanel;
     protected static GrowRoom activeGrowRoom = new GrowRoom();
+    protected static ArrayList<Plant> activePlantList = new ArrayList();
     
     protected static JPanel selectedGrowRoomPanel;
     protected static JPanel indoorModulePanel;
@@ -62,6 +63,17 @@ public class GrowRoomController
     {
         indoorModulePanel.setVisible(false);
         selectedGrowRoomPanel.setVisible(true);
+    }
+    
+    
+    public static ArrayList<Plant> getActivePlantList()
+    {
+        return activePlantList;
+    }
+    
+    public static void setActivePlantList(ArrayList<Plant> plantList)
+    {
+        activePlantList = plantList;
     }
     
     

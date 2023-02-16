@@ -267,21 +267,21 @@ public class NewDashboard extends javax.swing.JFrame {
         GrowModuleHandler.setGrowModulePanel(this.IndoorModulePanel);
         IndoorPlantListHandler.setListPanel(this.customIndoorListPanel);
         //IndoorPlantListHandler.panelSetupTest(new Plant("Weekend @ Gary's #1", "1290", "Weekend @ Gary's", "29"));
-        Plant p = new Plant("Weekend @ Gary's #1", "1290", "Weekend @ Gary's", "29");
-        Plant p1 = new Plant("Goon Berries #2", "1290", "Weekend @ Gary's", "29");
-        Plant p2 = new Plant("Space Juice #3", "1290", "Weekend @ Gary's", "29");
-        Plant p3 = new Plant("Bahama Mama S1 # 2", "1290", "Weekend @ Gary's", "29");
-        IndoorPlantListHandler.addPlantToList(p);
-        IndoorPlantListHandler.addPlantToList(p1);
-        IndoorPlantListHandler.addPlantToList(p3);
-        IndoorPlantListHandler.addPlantToList(p);
-        IndoorPlantListHandler.addPlantToList(p);
-        IndoorPlantListHandler.addPlantToList(p3);
-        IndoorPlantListHandler.addPlantToList(p3);
-        IndoorPlantListHandler.addPlantToList(p1);
-        IndoorPlantListHandler.addPlantToList(p2);
-        IndoorPlantListHandler.addPlantToList(p3);
-        IndoorPlantListHandler.addPlantToList(p1);
+//        Plant p = new Plant("Weekend @ Gary's #1", "1290", "Weekend @ Gary's", "29");
+//        Plant p1 = new Plant("Goon Berries #2", "1290", "Weekend @ Gary's", "29");
+//        Plant p2 = new Plant("Space Juice #3", "1290", "Weekend @ Gary's", "29");
+//        Plant p3 = new Plant("Bahama Mama S1 # 2", "1290", "Weekend @ Gary's", "29");
+//        IndoorPlantListHandler.addPlantToList(p);
+//        IndoorPlantListHandler.addPlantToList(p1);
+//        IndoorPlantListHandler.addPlantToList(p3);
+//        IndoorPlantListHandler.addPlantToList(p);
+//        IndoorPlantListHandler.addPlantToList(p);
+//        IndoorPlantListHandler.addPlantToList(p3);
+//        IndoorPlantListHandler.addPlantToList(p3);
+//        IndoorPlantListHandler.addPlantToList(p1);
+//        IndoorPlantListHandler.addPlantToList(p2);
+//        IndoorPlantListHandler.addPlantToList(p3);
+//        IndoorPlantListHandler.addPlantToList(p1);
         
         IndoorPlantListHandler.updateListPanel();
     }
@@ -592,6 +592,9 @@ public class NewDashboard extends javax.swing.JFrame {
         jPanel9 = new javax.swing.JPanel();
         SelectedGrowRoomPanel = new javax.swing.JPanel();
         customIndoorListPanel = new javax.swing.JPanel();
+        indoorPlantListPageLabel = new javax.swing.JLabel();
+        indoorPlantListForwardArrow = new javax.swing.JLabel();
+        indoorPlantListBackArrow = new javax.swing.JLabel();
         growRoomPlantListPanel = new javax.swing.JLabel();
         growRoomOverviewPanel = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -605,13 +608,15 @@ public class NewDashboard extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         roomSpecBgLabel = new javax.swing.JLabel();
         growRoomToolNavBarPanel = new javax.swing.JPanel();
-        growRoomToolWateringIcon = new javax.swing.JLabel();
         grwoRoomToolPlantIcon = new javax.swing.JLabel();
         growRoomLightToolIcon = new javax.swing.JLabel();
         growRoomToolPlantStatIcon = new javax.swing.JLabel();
+        growRoomToolWateringIcon = new javax.swing.JLabel();
         growRoomToolPanel = new javax.swing.JPanel();
         growroomPlantToolPanel = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
+        growRoomToolPlantStatIcon2 = new javax.swing.JLabel();
+        growRoomToolPlantStatIcon1 = new javax.swing.JLabel();
         growRoomOverviewLabel = new javax.swing.JLabel();
         outdoorPanel = new javax.swing.JPanel();
         plantCreationPanel = new javax.swing.JPanel();
@@ -1413,22 +1418,29 @@ public class NewDashboard extends javax.swing.JFrame {
         customIndoorListPanel.setForeground(new java.awt.Color(255, 255, 0));
         customIndoorListPanel.setOpaque(false);
         customIndoorListPanel.setPreferredSize(new java.awt.Dimension(375, 894));
+        customIndoorListPanel.setLayout(null);
+
+        indoorPlantListPageLabel.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        indoorPlantListPageLabel.setForeground(new java.awt.Color(255, 255, 255));
+        indoorPlantListPageLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        indoorPlantListPageLabel.setText("Page 1");
+        customIndoorListPanel.add(indoorPlantListPageLabel);
+        indoorPlantListPageLabel.setBounds(150, 850, 60, 30);
+
+        indoorPlantListForwardArrow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/forwardArrow.png"))); // NOI18N
+        customIndoorListPanel.add(indoorPlantListForwardArrow);
+        indoorPlantListForwardArrow.setBounds(230, 850, 40, 30);
+
+        indoorPlantListBackArrow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/backArrow.png"))); // NOI18N
+        customIndoorListPanel.add(indoorPlantListBackArrow);
+        indoorPlantListBackArrow.setBounds(90, 850, 40, 30);
 
         growRoomPlantListPanel.setBackground(new java.awt.Color(0, 0, 0));
         growRoomPlantListPanel.setForeground(new java.awt.Color(0, 0, 0));
         growRoomPlantListPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/plantListGraphic.png"))); // NOI18N
         growRoomPlantListPanel.setText("jLabel35");
-
-        javax.swing.GroupLayout customIndoorListPanelLayout = new javax.swing.GroupLayout(customIndoorListPanel);
-        customIndoorListPanel.setLayout(customIndoorListPanelLayout);
-        customIndoorListPanelLayout.setHorizontalGroup(
-            customIndoorListPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(growRoomPlantListPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        customIndoorListPanelLayout.setVerticalGroup(
-            customIndoorListPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(growRoomPlantListPanel)
-        );
+        customIndoorListPanel.add(growRoomPlantListPanel);
+        growRoomPlantListPanel.setBounds(0, 0, 375, 894);
 
         SelectedGrowRoomPanel.add(customIndoorListPanel);
         customIndoorListPanel.setBounds(10, 10, 375, 894);
@@ -1439,7 +1451,7 @@ public class NewDashboard extends javax.swing.JFrame {
 
         jPanel4.setOpaque(false);
 
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/growRoomLightPanel.png"))); // NOI18N
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/growRoomLightSpecsPanel.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -1477,23 +1489,23 @@ public class NewDashboard extends javax.swing.JFrame {
         jLabel35.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(255, 255, 255));
         jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel35.setText("75°");
+        jLabel35.setText("75°F");
         environmentalPanel.add(jLabel35);
-        jLabel35.setBounds(180, 95, 30, 25);
+        jLabel35.setBounds(175, 95, 40, 25);
 
         jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
         jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel31.setText("75°");
+        jLabel31.setText("75°F");
         environmentalPanel.add(jLabel31);
-        jLabel31.setBounds(130, 95, 30, 25);
+        jLabel31.setBounds(125, 95, 40, 25);
 
         jLabel27.setFont(new java.awt.Font("Segoe UI", 0, 28)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(255, 255, 255));
         jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel27.setText("75°");
+        jLabel27.setText("75°F");
         environmentalPanel.add(jLabel27);
-        jLabel27.setBounds(150, 35, 45, 30);
+        jLabel27.setBounds(145, 35, 55, 30);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 32)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -1512,11 +1524,6 @@ public class NewDashboard extends javax.swing.JFrame {
         growRoomToolNavBarPanel.setOpaque(false);
         growRoomToolNavBarPanel.setLayout(null);
 
-        growRoomToolWateringIcon.setBackground(new java.awt.Color(38, 38, 38));
-        growRoomToolWateringIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/wateringIcon.png"))); // NOI18N
-        growRoomToolNavBarPanel.add(growRoomToolWateringIcon);
-        growRoomToolWateringIcon.setBounds(0, 0, 30, 30);
-
         grwoRoomToolPlantIcon.setBackground(new java.awt.Color(38, 38, 38));
         grwoRoomToolPlantIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/plantIcon.png"))); // NOI18N
         growRoomToolNavBarPanel.add(grwoRoomToolPlantIcon);
@@ -1532,8 +1539,13 @@ public class NewDashboard extends javax.swing.JFrame {
         growRoomToolNavBarPanel.add(growRoomToolPlantStatIcon);
         growRoomToolPlantStatIcon.setBounds(120, 0, 30, 30);
 
+        growRoomToolWateringIcon.setBackground(new java.awt.Color(38, 38, 38));
+        growRoomToolWateringIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/wateringIcon.png"))); // NOI18N
+        growRoomToolNavBarPanel.add(growRoomToolWateringIcon);
+        growRoomToolWateringIcon.setBounds(0, 0, 30, 30);
+
         growRoomOverviewPanel.add(growRoomToolNavBarPanel);
-        growRoomToolNavBarPanel.setBounds(565, 535, 150, 30);
+        growRoomToolNavBarPanel.setBounds(570, 535, 150, 30);
 
         growRoomToolPanel.setOpaque(false);
         growRoomToolPanel.setLayout(null);
@@ -1542,15 +1554,29 @@ public class NewDashboard extends javax.swing.JFrame {
         growroomPlantToolPanel.setOpaque(false);
         growroomPlantToolPanel.setLayout(null);
 
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/growroomPlantToolPanel.png"))); // NOI18N
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/wateringPanel.png"))); // NOI18N
         growroomPlantToolPanel.add(jLabel30);
-        jLabel30.setBounds(0, 0, 725, 296);
+        jLabel30.setBounds(0, 0, 720, 313);
 
         growRoomToolPanel.add(growroomPlantToolPanel);
         growroomPlantToolPanel.setBounds(0, 0, 725, 296);
 
         growRoomOverviewPanel.add(growRoomToolPanel);
         growRoomToolPanel.setBounds(15, 575, 720, 310);
+
+        growRoomToolPlantStatIcon2.setBackground(new java.awt.Color(38, 38, 38));
+        growRoomToolPlantStatIcon2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/zoneSelectionIcon.png"))); // NOI18N
+        growRoomOverviewPanel.add(growRoomToolPlantStatIcon2);
+        growRoomToolPlantStatIcon2.setBounds(30, 530, 40, 40);
+
+        growRoomToolPlantStatIcon1.setBackground(new java.awt.Color(38, 38, 38));
+        growRoomToolPlantStatIcon1.setFont(new java.awt.Font("Arial", 0, 28)); // NOI18N
+        growRoomToolPlantStatIcon1.setForeground(new java.awt.Color(255, 255, 255));
+        growRoomToolPlantStatIcon1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        growRoomToolPlantStatIcon1.setText("Zone 1");
+        growRoomToolPlantStatIcon1.setToolTipText("");
+        growRoomOverviewPanel.add(growRoomToolPlantStatIcon1);
+        growRoomToolPlantStatIcon1.setBounds(90, 530, 90, 40);
 
         growRoomOverviewLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/growroomSelectionPanel.png"))); // NOI18N
         growRoomOverviewPanel.add(growRoomOverviewLabel);
@@ -5115,6 +5141,8 @@ public class NewDashboard extends javax.swing.JFrame {
     private javax.swing.JPanel growRoomToolNavBarPanel;
     private javax.swing.JPanel growRoomToolPanel;
     private javax.swing.JLabel growRoomToolPlantStatIcon;
+    private javax.swing.JLabel growRoomToolPlantStatIcon1;
+    private javax.swing.JLabel growRoomToolPlantStatIcon2;
     private javax.swing.JLabel growRoomToolWateringIcon;
     private javax.swing.JPanel growroomPlantToolPanel;
     private javax.swing.JLabel grwoRoomToolPlantIcon;
@@ -5135,6 +5163,9 @@ public class NewDashboard extends javax.swing.JFrame {
     private javax.swing.JLabel idTitleLabel;
     private javax.swing.JLabel indoorLabel;
     private javax.swing.JPanel indoorPanel;
+    private javax.swing.JLabel indoorPlantListBackArrow;
+    private javax.swing.JLabel indoorPlantListForwardArrow;
+    private javax.swing.JLabel indoorPlantListPageLabel;
     private javax.swing.JLabel indoorSideLabel;
     private javax.swing.JLabel inventoryAddItemBackground;
     private javax.swing.JPanel inventoryAddItemPanel;

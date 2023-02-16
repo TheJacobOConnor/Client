@@ -27,6 +27,9 @@ public class Plant
     
     protected String plantHeight;
     
+
+    protected String zone;
+    
     public Plant()
     {
         
@@ -39,12 +42,21 @@ public class Plant
         this.roomId = roomId;
     }
     
-    public Plant(String plantLabel, String plantId, String cultivar, String roomId)
+    public Plant(String plantId, String plantLabel, String roomId, String zone)
+    {
+        this.plantId = plantId;
+        this.plantLabel = plantLabel;
+        this.roomId = roomId;
+        this.zone = zone;
+    }
+    
+    public Plant(String plantLabel, String plantId, String cultivar,String zone, String roomId)
     {
         this.plantId = plantId;
         this.plantLabel = plantLabel;
         this.cultivar = cultivar;
         this.roomId = roomId;
+        this.zone = zone;
     }
 
     public String getCultivar() {
@@ -88,6 +100,14 @@ public class Plant
 
     public void setPlantHeight(String plantHeight) {
         this.plantHeight = plantHeight;
+    }
+
+    public String getZone() {
+        return zone;
+    }
+
+    public void setZone(String zone) {
+        this.zone = zone;
     }
 
 

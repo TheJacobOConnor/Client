@@ -7,6 +7,7 @@ package Backend.Client;
 
 import Backend.Client.ServerCommands.IndoorCommands.LoadGrowRoom;
 import Backend.Client.ServerCommands.IndoorCommands.LoadGrowRoomModule;
+import Backend.Client.ServerCommands.IndoorCommands.UpdateActivePlantList;
 import Backend.Client.ServerCommands.InventoryCommands.LoadInventory;
 import Backend.Client.ServerCommands.SeedBankCommands.LoadSeedPacks;
 import java.io.BufferedReader;
@@ -63,11 +64,13 @@ public final class ServerMessageHandler
         LoadSeedPacks loadSeedPacks = new LoadSeedPacks("LoadSeedPacks");
         LoadInventory loadInventory = new LoadInventory("LoadInventory");
         LoadGrowRoom loadGrowRoom = new LoadGrowRoom("LoadGrowRoom");
+        UpdateActivePlantList uapl = new UpdateActivePlantList("UpdateActivePlantList");
         
         commandList.add(loadGrowRoomModule);
         commandList.add(loadSeedPacks);
         commandList.add(loadInventory);
         commandList.add(loadGrowRoom);
+        commandList.add(uapl);
         
         
         /*Path filePath = Paths.get("src/Backend/Client/ServerCommands/serverCommandList.txt");

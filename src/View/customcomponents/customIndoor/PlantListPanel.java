@@ -5,6 +5,7 @@
  */
 package View.customcomponents.customIndoor;
 
+import Backend.Indoor.IndoorPlantListHandler;
 import Backend.PlantData.Plant;
 import java.awt.Color;
 import java.awt.Cursor;
@@ -32,6 +33,8 @@ public class PlantListPanel extends JPanel
     private final int panelWidth = 349;
     private final int panelHeight = 45;
     
+    
+    
     private Font nameFont = new Font("bahnschrift", Font.PLAIN, 18);
     private Font idFont = new Font("bahnschrift", Font.PLAIN, 12);
     
@@ -41,6 +44,7 @@ public class PlantListPanel extends JPanel
     private JLabel plantIconLabel;
     private JLabel optionsLabel;
     private JLabel hoverLabel;
+ 
     
     
     
@@ -54,7 +58,7 @@ public class PlantListPanel extends JPanel
         this.setOpaque(false);
         this.buildLabels();
         this.setVisible(true);
-        this.setToolTipText("Fuck");
+        this.setToolTipText("huh");
         
         
         
@@ -78,6 +82,8 @@ public class PlantListPanel extends JPanel
         
         JLabel indoorHitboxLabel = new IndoorHitboxLabel(this.hoverLabel, plant.getPlantId());
         indoorHitboxLabel.setBounds(0, 0, 350, 45);
+        
+        
         
         
         
@@ -112,7 +118,7 @@ public class PlantListPanel extends JPanel
         this.optionsLabel.setCursor(new Cursor(Cursor.HAND_CURSOR));
         this.add(optionsLabel);
         
-
+       
         
         this.add(indoorHitboxLabel);
         this.add(hoverLabel);
@@ -123,6 +129,7 @@ public class PlantListPanel extends JPanel
         
         
     }
+    
     
 
 }
