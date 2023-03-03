@@ -40,10 +40,10 @@ public final class ServerMessageHandler
         
         
         System.out.println("command message: " + commandMessage);
-        
+        System.out.println("HEre at process command");
         for(ServerCommand command : serverCommandList)
         {
-            System.out.println("HEre at process command");
+            
             if(command.getCommandName().equalsIgnoreCase(commandMessage[0]))
             {
                 System.out.println("The command is: " + command.getCommandName());

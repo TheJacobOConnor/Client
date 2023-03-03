@@ -17,10 +17,12 @@ public class PlantCreationHandler
     protected static String plantNumber;
     protected static String growId;
     protected static String plantStage;
+    protected static String zone;
     
     protected static JTextField cultivarField;
     protected static JTextField plantNumberField;
     protected static JTextField growIdField;
+    protected static JTextField zoneField;
     
     public static String createPlantString()
     {
@@ -29,6 +31,7 @@ public class PlantCreationHandler
         cultivarName = cultivarField.getText();
         plantNumber = plantNumberField.getText();
         growId = growIdField.getText();
+        zone = zoneField.getText();
         
         
         if(plantNumber.contains(","))
@@ -42,12 +45,12 @@ public class PlantCreationHandler
             
             for(int i = min; i <= max; i++)
             {
-                returnStr += cultivarName + "," + i + "," + growId + "," + plantStage + "-";
+                returnStr += cultivarName + "," + i + "," + growId + "," + plantStage + "," + zone + "-";
             }
         }
         else
         {
-            returnStr += cultivarName + "," + plantNumber + "," + growId + "," + plantStage + "-";
+            returnStr += cultivarName + "," + plantNumber + "," + growId + "," + plantStage + "," + zone + "-";
         }
         
         
@@ -62,20 +65,14 @@ public class PlantCreationHandler
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    public static JTextField getZoneField() {
+        return zoneField;
+    }
+
+    public static void setZoneField(JTextField zoneField) {
+        PlantCreationHandler.zoneField = zoneField;
+    }
+
     
     
     

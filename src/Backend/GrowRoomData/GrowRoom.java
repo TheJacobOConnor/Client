@@ -20,9 +20,8 @@ public class GrowRoom
     protected String roomTemp;
     protected String roomRH;
     protected String roomCo2;
-    protected String roomPlantCount;
-    protected String stageStartDate;
-    protected String growStage;
+    protected String lightSchedule;
+    protected String roomStage;
     
     public GrowRoom()
     {
@@ -34,16 +33,16 @@ public class GrowRoom
         String[] list = args.split(",");
         for(String str : list)
         {
-            System.out.println("The new module");
+            System.out.println(str);
         }
         this.setRoomName(list[0]);
         this.setRoomId(list[1]);
         this.setRoomTemp(list[2]);
         this.setRoomRH(list[3]);
         this.setRoomCo2(list[4]);
-        this.setRoomPlantCount(list[5]);
-        this.setStageStartDate(list[6]);
-        this.setGrowStage(list[7]);
+        this.setLightSchedule(list[5]);
+        this.setRoomStage(list[6]);
+        
     }
   
     
@@ -88,29 +87,23 @@ public class GrowRoom
         this.roomCo2 = roomCo2;
     }
 
-    public String getRoomPlantCount() {
-        return roomPlantCount;
+    public String getLightSchedule() {
+        return lightSchedule;
     }
 
-    public void setRoomPlantCount(String roomPlantCount) {
-        this.roomPlantCount = roomPlantCount;
+    public void setLightSchedule(String lightSchedule) {
+        this.lightSchedule = lightSchedule;
     }
 
-    public String getStageStartDate() {
-        return stageStartDate;
+    public String getRoomStage() {
+        return roomStage;
     }
 
-    public void setStageStartDate(String stageStartDate) {
-        this.stageStartDate = stageStartDate;
+    public void setRoomStage(String roomStage) {
+        this.roomStage = roomStage;
     }
 
-    public String getGrowStage() {
-        return growStage;
-    }
 
-    public void setGrowStage(String growStage) {
-        this.growStage = growStage;
-    }
     
 }
 

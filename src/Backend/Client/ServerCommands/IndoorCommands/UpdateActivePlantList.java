@@ -42,7 +42,7 @@ public class UpdateActivePlantList extends ServerCommand
         {
             System.out.println(str);
         }
-        System.out.println("Processing LoadActivePlantList command.");
+        System.out.println("Processing LoadActivePlantList command." + args[1]);
         ArrayList<Plant> plantList = buildPlantList(args[1]);
         GrowRoomController.setActivePlantList(plantList);
         IndoorPlantListHandler.updateListPanel();

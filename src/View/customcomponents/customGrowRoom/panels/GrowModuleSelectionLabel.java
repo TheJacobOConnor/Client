@@ -22,8 +22,9 @@ public class GrowModuleSelectionLabel extends SelectionLabelMisc {
         addMouseListener(new MouseAdapter() {
         @Override
         public void mouseReleased(MouseEvent e) {
+            System.out.println("!!!!!!!!!!!" + roomId);
             GrowRoomController.requestGrowRoom("RequestData:GrowRoom:" + roomId);
-            IndoorPlantListHandler.requestPlantList(roomid);
+            IndoorPlantListHandler.requestPlantList(roomId);
         }
         });
     }

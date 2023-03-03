@@ -29,6 +29,7 @@ import Backend.PlantData.Plant;
 import Backend.PlantData.PlantCreationHandler;
 import Backend.Seed.SeedBankHandler;
 import View.customcomponents.customNotifications.NotificationPanel;
+import View.customcomponents.customTests.JacobDropDownMenu;
 import View.customcomponents.scrollbar.CustomScrollBar;
 import java.awt.Color;
 import java.awt.Cursor;
@@ -76,7 +77,7 @@ public class NewDashboard extends javax.swing.JFrame {
     ArrayList<Plant> indoorPlantList = new ArrayList();
     //GrowRoom currentRoom = new GrowRoom("0");
     //
-    
+    JacobDropDownMenu zoneDropDown;
     //Client vars
     ArrayList<String> streamList = new ArrayList<>();
     Socket socket = null;
@@ -234,6 +235,7 @@ public class NewDashboard extends javax.swing.JFrame {
         testbglabel.setBounds(0, 0, this.growRoomOverviewPanel.getWidth(), this.growRoomOverviewPanel.getHeight());
         Icon icon = new ImageIcon("src/Data/Images/Indoor/Panels/growroomSelectionPanel.png");
         testbglabel.setIcon(icon);
+
         
         
         CurveLineChart clc = new CurveLineChart();
@@ -470,6 +472,7 @@ public class NewDashboard extends javax.swing.JFrame {
         PlantCreationHandler.setCultivarField(this.pcCultivarText);
         PlantCreationHandler.setPlantNumberField(this.pcPlantNumberText);
         PlantCreationHandler.setGrowIdField(this.pcGrowIdText);
+        PlantCreationHandler.setZoneField(this.pcZoneField);
     }
 
     
@@ -620,6 +623,7 @@ public class NewDashboard extends javax.swing.JFrame {
         growRoomOverviewLabel = new javax.swing.JLabel();
         outdoorPanel = new javax.swing.JPanel();
         plantCreationPanel = new javax.swing.JPanel();
+        pcZoneField = new javax.swing.JTextField();
         pcGrowIdText = new javax.swing.JTextField();
         pcPlantNumberText = new javax.swing.JTextField();
         pcCultivarText = new javax.swing.JTextField();
@@ -1334,6 +1338,7 @@ public class NewDashboard extends javax.swing.JFrame {
         inventorySelectionPanel.setLayout(null);
 
         inventorySelectionItemNameLabel.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
+        inventorySelectionItemNameLabel.setForeground(new java.awt.Color(255, 255, 255));
         inventorySelectionItemNameLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         inventorySelectionItemNameLabel.setText("MindFlayer #5");
         inventorySelectionPanel.add(inventorySelectionItemNameLabel);
@@ -1360,7 +1365,7 @@ public class NewDashboard extends javax.swing.JFrame {
         inventorySelectionPanel.add(inventoryProfileDataLabel);
         inventoryProfileDataLabel.setBounds(270, 100, 40, 30);
 
-        inventorySelectionPanelBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Inventory/Graphics/selectionDisplayPanel.png"))); // NOI18N
+        inventorySelectionPanelBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Inventory/Graphics/selectionDisplayPanelDark.png"))); // NOI18N
         inventorySelectionPanel.add(inventorySelectionPanelBackground);
         inventorySelectionPanelBackground.setBounds(0, 0, 331, 880);
 
@@ -1435,15 +1440,15 @@ public class NewDashboard extends javax.swing.JFrame {
         customIndoorListPanel.add(indoorPlantListBackArrow);
         indoorPlantListBackArrow.setBounds(90, 850, 40, 30);
 
+        SelectedGrowRoomPanel.add(customIndoorListPanel);
+        customIndoorListPanel.setBounds(10, 10, 375, 894);
+
         growRoomPlantListPanel.setBackground(new java.awt.Color(0, 0, 0));
         growRoomPlantListPanel.setForeground(new java.awt.Color(0, 0, 0));
         growRoomPlantListPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Data/Images/Indoor/Panels/plantListGraphic.png"))); // NOI18N
         growRoomPlantListPanel.setText("jLabel35");
-        customIndoorListPanel.add(growRoomPlantListPanel);
-        growRoomPlantListPanel.setBounds(0, 0, 375, 894);
-
-        SelectedGrowRoomPanel.add(customIndoorListPanel);
-        customIndoorListPanel.setBounds(10, 10, 375, 894);
+        SelectedGrowRoomPanel.add(growRoomPlantListPanel);
+        growRoomPlantListPanel.setBounds(10, 10, 375, 894);
 
         growRoomOverviewPanel.setEnabled(false);
         growRoomOverviewPanel.setOpaque(false);
@@ -1596,6 +1601,13 @@ public class NewDashboard extends javax.swing.JFrame {
 
         plantCreationPanel.setOpaque(false);
         plantCreationPanel.setLayout(null);
+
+        pcZoneField.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
+        pcZoneField.setForeground(new java.awt.Color(255, 255, 255));
+        pcZoneField.setBorder(null);
+        pcGrowIdText.setBackground(new java.awt.Color(255,255,255,0));
+        plantCreationPanel.add(pcZoneField);
+        pcZoneField.setBounds(110, 180, 160, 30);
 
         pcGrowIdText.setFont(new java.awt.Font("Bahnschrift", 0, 18)); // NOI18N
         pcGrowIdText.setForeground(new java.awt.Color(255, 255, 255));
@@ -4007,7 +4019,7 @@ public class NewDashboard extends javax.swing.JFrame {
         
         //client.sendMessageToServer("RequestData:PlantList:97");
      
-        client.sendMessageToServer("RequestData:GrowRoomModule:29");
+        client.sendMessageToServer("RequestData:GrowRoomModule:97");
 
         //requestHandler.sendRequest("RequestData PlantList 97");
         
@@ -5311,6 +5323,7 @@ public class NewDashboard extends javax.swing.JFrame {
     private javax.swing.JLabel pcSeedingLabel;
     private javax.swing.JLabel pcSubmitLabel;
     private javax.swing.JLabel pcVegLabel;
+    private javax.swing.JTextField pcZoneField;
     private javax.swing.JPanel phenoFinderPanel;
     private javax.swing.JLabel phenoFinderSearchLabel;
     private javax.swing.JLabel phenotypesLabel;

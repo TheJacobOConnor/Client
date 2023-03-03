@@ -55,7 +55,7 @@ public class IndoorPlantListHandler
     
     public static void requestPlantList(String roomId)
     {
-        ClientHandler.sendMessage("RequestData:PlantList:29");
+        ClientHandler.sendMessage("RequestData:PlantList:" + roomId);
     }
     
     

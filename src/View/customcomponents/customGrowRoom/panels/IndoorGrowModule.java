@@ -111,7 +111,7 @@ public class IndoorGrowModule extends JPanel
         
         JLabel plantCountLabel = new JLabel();
         plantCountLabel.setFont(biggerFont);
-        plantCountLabel.setText(this.growRoom.getRoomPlantCount());
+        plantCountLabel.setText("NA");
         plantCountLabel.setForeground(textColor);
         plantCountLabel.setHorizontalAlignment(SwingConstants.LEFT);
         plantCountLabel.setBounds(320, 75, 40, 20);

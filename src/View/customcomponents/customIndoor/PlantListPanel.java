@@ -18,7 +18,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import View.customcomponents.customIndoor.IndoorHitboxLabel;
+import View.customcomponents.customTests.JacobDropDownMenu;
 import java.awt.event.MouseListener;
+import java.util.ArrayList;
 import javax.swing.SwingUtilities;
 
 /**
@@ -119,6 +121,8 @@ public class PlantListPanel extends JPanel
         this.add(optionsLabel);
         
        
+       
+        
         
         this.add(indoorHitboxLabel);
         this.add(hoverLabel);
@@ -131,5 +135,14 @@ public class PlantListPanel extends JPanel
     }
     
     
+    public void addLabelToPanel(JLabel newLabel)
+    {
+        this.add(newLabel);
+    }
+    
+    public void addPanelToPanel(JPanel newPanel)
+    {
+        this.add(newPanel);
+    }
 
 }

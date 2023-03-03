@@ -18,34 +18,16 @@ public class GrowModuleHandler
     protected static JPanel growModulePanel;
     protected static ArrayList<JPanel> moduleList = new ArrayList<>();
 
-    public static void addNewModule(GrowRoom newRoom)
+    public static void addNewModule(GrowRoom growRoom)
     {
-        System.out.println(newRoom.getRoomName() + " is being created now ");
-        IndoorGrowModule newModule = new IndoorGrowModule(newRoom);
-        IndoorGrowModule newModule2 = new IndoorGrowModule(newRoom);
-        IndoorGrowModule newModule3 = new IndoorGrowModule(newRoom);
-        IndoorGrowModule newModule4 = new IndoorGrowModule(newRoom);
-        IndoorGrowModule newModule5 = new IndoorGrowModule(newRoom);
-        IndoorGrowModule newModule6 = new IndoorGrowModule(newRoom);
-        IndoorGrowModule newModule7 = new IndoorGrowModule(newRoom);
-        IndoorGrowModule newModule8 = new IndoorGrowModule(newRoom);
+        System.out.println(growRoom.getRoomName() + " is being created now ");
+        IndoorGrowModule newModule = new IndoorGrowModule(growRoom);
+
        
         growModulePanel.add(newModule);
-        growModulePanel.add(newModule2);
-        growModulePanel.add(newModule3);
-        growModulePanel.add(newModule4);
-        growModulePanel.add(newModule5);
-        growModulePanel.add(newModule6);
-        growModulePanel.add(newModule7);
-        growModulePanel.add(newModule8);
+
         moduleList.add(newModule);
-        moduleList.add(newModule2);
-        moduleList.add(newModule3);
-        moduleList.add(newModule4);
-        moduleList.add(newModule5);
-        moduleList.add(newModule6);
-        moduleList.add(newModule7);
-        moduleList.add(newModule8);
+  
         
         updateModuleGraphics();
  

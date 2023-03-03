@@ -36,7 +36,7 @@ public class LoadGrowRoom extends ServerCommand
     @Override
     public void runCommand(String[] args)
     {
-        System.out.println("Processing LoadGrowRoom command.");
+        System.out.println("Processing LoadGrowRoom command. " + args[1]);
         //String plantList = args[1];
         //IndoorHandler.loadGrowRoom(plantList);
         GrowRoom newRoom = new GrowRoom();
